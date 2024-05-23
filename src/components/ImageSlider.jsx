@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './ImageSlider.css';
 
 const images = [
-  'https://blog.bluetrustloans.com/wp-content/uploads/2021/08/BTL-Do-You-Need-Financial-Assistance-for-Your-Car-Repair-1024x536.png',
-  'https://nebula.wsimg.com/b368763d5da9d98799181cb553a68856?AccessKeyId=5E30142DF27B56347CC1&disposition=0&alloworigin=1',
-  'https://www.kbb.com/wp-content/uploads/2021/08/car-maintenance-guide.jpeg?w=763',
+  'https://t3.ftcdn.net/jpg/04/96/48/30/360_F_496483060_C9OG1wJpfmjMXcNmUBibmA9wYxxZCxnW.jpg',
+  'https://www.shutterstock.com/image-photo/worker-washing-red-car-sponge-600nw-1859193349.jpg',
+  'https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=',
 ];
 
 const ImageSlider = () => {
@@ -13,7 +13,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3500);
+    }, 2800);
     return () => clearInterval(interval);
   }, []);
 

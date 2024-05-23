@@ -1,6 +1,5 @@
 import React from 'react';
 import './Testimonials.css';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const testimonials = [
   {
@@ -23,7 +22,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="testimonials-container">
-      <h2 className="testimonials-title">What Customer Says</h2>
+      <h2 className="testimonials-title">Testimonials</h2>
       <div className="testimonials-wrapper">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial-card">
