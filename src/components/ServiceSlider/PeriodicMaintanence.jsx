@@ -27,6 +27,10 @@ const PeriodicMaintanence = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
+  const prevSlide = () => {
+    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+  };
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -89,7 +93,8 @@ const PeriodicMaintanence = () => {
               />
             ))}
           </div>
-          <button className="slideshow__arrow" onClick={nextSlide}>❯</button>
+          <button className="slideshow__arrow slideshow__arrow--left" onClick={prevSlide}>❮</button>
+          <button className="slideshow__arrow slideshow__arrow--right" onClick={nextSlide}>❯</button>
           <div className="slideshow__bullets">
             {images.map((_, index) => (
               <span key={index} className={index === currentIndex ? 'active' : ''}></span>
@@ -155,6 +160,30 @@ const PeriodicMaintanence = () => {
           <button type="submit">Submit</button>
         </form>
       </div>
+      <div className="service-container">
+      <div className="service-section">
+        <h2 style={{marginTop:"0", textAlign:"center"}}>Service Package Details</h2>
+        <div className="service-items">
+          <div className="service-item">Comprehensive Digital Diagnostics</div>
+          <div className="service-item">High-Quality Castrol Oil</div>
+          <div className="service-item">Brake Oil & Coolant Replenishment</div>
+          <div className="service-item">Oil Filter Replacement</div>
+          <div className="service-item">Air Filter & AC Filter Maintenance</div>
+          <div className="service-item">Interior Vacuuming & Dashboard Polishing</div>
+          <div className="service-item">Exterior Washing & Tyre Polishing</div>
+        </div>
+      </div>
+      <div className="service-section">
+        <h2 style={{marginTop:"0", textAlign:"center"}}>Global Auto Expert Advantages</h2>
+        <div className="service-items">
+          <div className="service-item">Significant Savings: Save up to 50% on services</div>
+          <div className="service-item">Skilled Technicians: Professionally trained experts</div>
+          <div className="service-item">Convenient Pick-up & Drop: Complimentary service</div>
+          <div className="service-item">Genuine Parts: Certified replacement components</div>
+          <div className="service-item">Real-time tracking</div>
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
