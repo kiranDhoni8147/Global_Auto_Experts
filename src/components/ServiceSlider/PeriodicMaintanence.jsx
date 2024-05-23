@@ -17,24 +17,39 @@ const PeriodicMaintanence = () => {
     year: '',
     model: '',
     message: '',
+    otp: '',
+    termsAgreed: false,
   });
+  const [otpSent, setOtpSent] = useState(false);
+  const [serviceCost] = useState(3299); // Assuming a fixed cost for demonstration
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: type === 'checkbox' ? checked : value,
     });
+  };
+
+  const handleOtpSend = () => {
+    // Logic to send OTP to the phone number
+    alert('OTP sent to ' + formData.phone);
+    setOtpSent(true);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Send data to the backend
+    if (!formData.termsAgreed) {
+      alert('You must agree to the terms and conditions to proceed.');
+      return;
+    }
+
+    // Data should be sent to backend
     const response = await fetch('/api/submit', {
       method: 'POST',
       headers: {
@@ -81,7 +96,7 @@ const PeriodicMaintanence = () => {
             ))}
           </div>
           <div className="slideshow__text">
-            <p>Periodic Maintenence Service</p>
+            <p>Periodic Maintenance Service</p>
           </div>
         </div>
         <form className="customer-form" onSubmit={handleSubmit}>
@@ -97,7 +112,16 @@ const PeriodicMaintanence = () => {
           <div className="form-group">
             <label htmlFor="phone">Phone:</label>
             <input type="number" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
+            <button type="button" onClick={handleOtpSend} disabled={!formData.phone}>
+              Verify OTP
+            </button>
           </div>
+          {otpSent && (
+            <div className="form-group">
+              <label htmlFor="otp">OTP:</label>
+              <input type="text" id="otp" name="otp" value={formData.otp} onChange={handleChange} required />
+            </div>
+          )}
           <div className="form-group">
             <label htmlFor="address">Address:</label>
             <textarea id="address" name="address" value={formData.address} onChange={handleChange} required></textarea>
@@ -119,6 +143,14 @@ const PeriodicMaintanence = () => {
               <option value="Model B">Model B</option>
               <option value="Model C">Model C</option>
             </select>
+          </div>
+          <div className="form-group checkbox-group">
+            <input type="checkbox" id="terms" name="termsAgreed" checked={formData.termsAgreed} onChange={handleChange} required />
+            <label htmlFor="terms">I agree to the terms and conditions</label>
+          </div>
+          <div className="form-group cost">
+            <label>Cost of Service:</label>
+            <p>Rs. {serviceCost}</p>
           </div>
           <button type="submit">Submit</button>
         </form>
