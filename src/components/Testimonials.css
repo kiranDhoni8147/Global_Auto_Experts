@@ -39,6 +39,11 @@
     margin-bottom: 10px;
     border: 2px solid orange;
   }
+  .testimonial-image:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease; 
+  }
   
   .testimonial-card p {
     color: #666;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './ServiceSlider.css';
 
 const services = [
@@ -62,26 +61,26 @@ const ServiceSlider = () => {
 
   return (
     <div className="sliderr">
-      <h2 className='service'>Our Most Popular Services</h2>
+      <h2 className='service'>Car Services</h2>
       <div className="sliderr__wrapper" style={{ transform: `translateX(${-currentIndex * (100 / 4)}%)` }}>
         {services.map((service, index) => (
           <div className={`sliderr__slide ${service.viewAll ? 'view-all' : 'div-highlight'}`} key={index}>
             {service.viewAll ? (
               <div className="view-all">
-                <Link to="/view-all">
+                <a href="/view-all" target="_blank">
                   <button>View All</button>
-                </Link>
+                </a>
               </div>
             ) : (
               <>
                 <img src={service.image} alt={service.name} />
                 <div className="sliderr__content">
-                  <div style={{fontFamily:"inherit", fontSize:"x-large"}}><h3>{service.name}</h3></div>
+                  <div style={{fontFamily:"inherit", fontSize:"x-large"}}><h4>{service.name}</h4></div>
                   <p>{service.availed}</p>
                   <div><strong style={{color:"#ff9800", fontSize:"x-large"}}>{service.price}</strong></div>
-                  <Link to={service.bookingLink}>
+                  <a href={service.bookingLink} target="_blank">
                     <button>Book Now</button>
-                  </Link>
+                  </a>
                 </div>
               </>
             )}
