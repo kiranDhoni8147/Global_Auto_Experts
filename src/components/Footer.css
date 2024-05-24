@@ -31,7 +31,7 @@
   
   .footer a {
     display: block;
-    color: #ffcc00;
+    color: white;
     text-decoration: none;
     margin-bottom: 5px;
     transition: color 0.3s ease;
@@ -39,19 +39,19 @@
   
   .footer a:hover {
     text-decoration: underline;
-    color: #ff9900;
+    color:white;
   }
   
   .social-icons a {
     font-size: 2em;
     margin: 5px;
-    color: #ffcc00;
+    color: white;
     transition: transform 0.3s ease, color 0.3s ease;
   }
   
   .social-icons a:hover {
     transform: scale(1.2);
-    color: #ff9900;
+    color: white;
   }
   
   @media (max-width: 768px) {
