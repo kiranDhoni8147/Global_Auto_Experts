@@ -7,35 +7,30 @@ const services = [
     image: 'https://img.freepik.com/free-photo/technician-is-repairing-car-flat-tire_1150-6270.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714521600&semt=ais',
     name: 'Puncture & Flat Tyre',
     price: ' ₹3299',
-    availed: '4543 have availed',
     bookingLink: '/booking/puncture',
   },
   {
     image: 'https://omelectronics.in/wp-content/uploads/2021/07/battety-1-1.png',
     name: 'Battery Jump Start',
     price: ' ₹1399',
-    availed: '2344 have availed',
     bookingLink: '/booking/battery-jump',
   },
   {
     image: 'https://media.istockphoto.com/id/1323910525/photo/car-breakdown-on-the-highway.jpg?s=612x612&w=0&k=20&c=gyaTkJKb_ZgyBP8PkgX6GqzkdyzCQSndlA1DYXVGPsY=',
     name: 'Minor Roadside Repair',
     price: ' ₹1999',
-    availed: '2762 have availed',
     bookingLink: '/booking/minor-repair',
   },
   {
     image: 'https://img.freepik.com/premium-photo/close-up-pump-nozzle-gas-station-generative-ai_10221-23943.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714953600&semt=ais',
     name: 'Emergency Fuel Delivery',
     price: ' ₹1699',
-    availed: '1936 have availed',
     bookingLink: '/booking/emergency-fuel',
   },
   {
     image: 'https://img.freepik.com/free-photo/still-life-keys-new-home_23-2151015268.jpg',
     name: 'Key Recovery Service',
     price: ' ₹1699',
-    availed: '1936 have availed',
     bookingLink: '/booking/key',
   },
 ];
@@ -62,7 +57,9 @@ const ServiceSliderr = () => {
 
   return (
     <div className="sliderr">
-      <h2 className='service'>Roadside Assistance Services</h2>
+      <a href="/roadside-assistance" className="service-link" target='_blank'>
+        <h2 className="service">Roadside Assistance Services</h2>
+      </a>
       <div className="sliderr__wrapper" style={{ transform: `translateX(${-currentIndex * (100 / 4)}%)` }}>
         {services.map((service, index) => (
           <div className={`sliderr__slide ${service.viewAll ? 'view-all' : 'div-highlight'}`} key={index}>
@@ -76,11 +73,9 @@ const ServiceSliderr = () => {
               <>
                 <img src={service.image} alt={service.name} />
                 <div className="sliderr__content">
-                  <div style={{fontFamily:"inherit", fontSize:"x-large"}}><h4>{service.name}</h4></div>
-                  <p>{service.availed}</p>
-                  <div><strong style={{color:"#ff9800", fontSize:"x-large"}}>{service.price}</strong></div>
+                  <div style={{ fontFamily: "inherit", fontSize: "x-large" }}><h4>{service.name}</h4></div>
+                  <div><strong style={{ color: "#ff9800", fontSize: "x-large" }}>{service.price}</strong></div>
                   <a href={service.bookingLink} target="_blank"><button>Book Now</button></a>
-                    
                 </div>
               </>
             )}
@@ -100,3 +95,4 @@ const ServiceSliderr = () => {
 };
 
 export default ServiceSliderr;
+

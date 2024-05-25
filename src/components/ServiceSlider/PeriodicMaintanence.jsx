@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './PeriodicMaintanence.css';
-
+/*Slideshow*/
 const images = [
   'https://carcooper.com/wp-content/uploads/2018/03/carcooper-image-2.jpg',
   'https://wallpapers.com/images/hd/honda-car-rear-view-aj3pjme6cgrd0lu9.jpg',
   'https://i.pinimg.com/originals/bd/55/8c/bd558ce9ded89f3379263afb6d56deba.jpg',
 ];
-
+/*Form*/
 const carData = {
   "Maruti Suzuki": ["Brezza", "Swift", "Swift Dzire", "Baleno", "Wagon R", "Celerio", "Alto K10", "Eeco", "Ertiga", "Ciaz", "Ignis", "Grand Vitara", "Jimny", "XL6", "Fronx", "Invicto", "eVX", "Gypsy", "Omni", "SX4", "Maruti 800", "Kizashi", "Esteem"],
   "Hyundai": ["i20", "i10", "Creta", "Tucson", "Venue", "Aura", "Kona", "Alcazar", "Palisade", "Verna", "Ioniq 6", "Elantra", "Santa Fe", "Exter", " Sonata", "Accent", "Xcent", "Casper", "Eon", "Excel", "Getz"],
@@ -46,8 +46,8 @@ const carData = {
   "Hummer": ["H2", "H3"],
   "BYD": ["e6"],
 };
-
-const faqData = [
+/*FAQ*/
+const faqs = [
   {
     question: "What is included in the Pricing?",
     answer: "The pricing includes comprehensive digital diagnostics, high-quality Castrol oil, brake oil & coolant replenishment, oil filter replacement, air filter & AC filter maintenance, interior vacuuming & dashboard polishing, and exterior washing & tyre polishing."
@@ -67,6 +67,24 @@ const faqData = [
   {
     question: "Reliability",
     answer: "Our professionally trained experts provide reliable service, and you can track your service in real-time."
+  },
+];
+/*Testimonials*/
+const testimonials = [
+  {
+    image: "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg",
+    description: "Always on time, efficient and completely trustworthy!",
+    name: "Sampoorna James",
+  },
+  {
+    image: "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg",
+    description: "Excellent Service and Friendly Staff",
+    name: "Rashmitha Rani",
+  },
+  {
+    image: "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg",
+    description: "Wonderful Service! This was an absolute life-saver. They fixed my car in a timely and cost-effective manner. The customer service is so good too! I would recommend this to anyone.",
+    name: "Sneha Kapoor",
   },
 ];
 
@@ -229,6 +247,7 @@ const PeriodicMaintanence = () => {
           <div className="form-group">
             <select
               id="brand"
+              className="brand-select"
               name="brand"
               value={formData.brand}
               onChange={(e) => handleBrandChange(e.target.value)}
@@ -302,20 +321,34 @@ const PeriodicMaintanence = () => {
             <div className="service-item">Real-time tracking</div>
           </div>
         </div>
-        <div className="faq-section">
-          <h2>FAQs</h2>
-          {faqData.map((faq, index) => (
-            <div key={index} className="faq-item">
-              <div className="faq-question" onClick={() => toggleFAQ(index)}>
-                {faq.question}
-              </div>
-              <div className={`faq-answer ${activeIndex === index ? 'show' : ''}`}>
-                {faq.answer}
-              </div>
-            </div>
-          ))}
         </div>
+        <div className="faq-container">
+      <h2 className="faq-title">Frequently Asked Questions</h2>
+      {faqs.map((faq, index) => (
+        <div key={index} className="faq-item">
+          <button className="faq-question" onClick={() => toggleFAQ(index)}>
+            {faq.question}
+          </button>
+          <div className={`faq-answer ${activeIndex === index ? 'active' : ''}`}>
+            {faq.answer}
+          </div>
+        </div>
+      ))}
+    </div>
+      
+      <div className="testimonials-container">
+      <h2 className="testimonials-title">Testimonials</h2>
+      <div className="testimonials-wrapper">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="testimonial-card">
+            <img src={testimonial.image} alt="" className="testimonial-image" />
+            <p className='testimonial-description'>{testimonial.description}</p>
+            <p className="testimonial-name">{testimonial.name}</p>
+          </div>
+        ))}
       </div>
+    </div>
+      
     </div>
   );
 };

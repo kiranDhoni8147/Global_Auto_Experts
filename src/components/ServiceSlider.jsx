@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ServiceSlider.css';
 
 const services = [
@@ -6,35 +7,30 @@ const services = [
     image: 'https://automechanica.com/uploads/service/service_image/1/1.jpg',
     name: 'Periodic Maintenance',
     price: ' ₹3299',
-    availed: '4543 have availed',
     bookingLink: '/booking/periodic-maintenance',
   },
   {
     image: 'https://www.glendenningtyreautorepairs.com.au/wp-content/uploads/2020/03/Air-Conditioning.jpg',
     name: 'Air Condition System',
     price: ' ₹1399',
-    availed: '2344 have availed',
     bookingLink: '/booking/air-condition-system',
   },
   {
     image: 'https://www.htsaves.com/wp-content/uploads/2023/03/car-battery-replacement-img.jpg',
     name: 'Battery Replacement',
     price: ' ₹1999',
-    availed: '2762 have availed',
     bookingLink: '/booking/battery-replacement',
   },
   {
     image: 'https://www.abebrakes.com/wp-content/uploads/2021/06/ABE-breaks_01.jpg',
     name: 'Brake Services',
     price: ' ₹1699',
-    availed: '1936 have availed',
     bookingLink: '/booking/brake-services',
   },
   {
     image: 'https://assets.firestonecompleteautocare.com/content/dam/bsro-sites/fcac/blog/images/2018/10/technician-changing-oil-filter.jpg',
     name: 'Oil and Filter',
     price: ' ₹1699',
-    availed: '1936 have availed',
     bookingLink: '/booking/oil-and-filter',
   },
 ];
@@ -61,7 +57,9 @@ const ServiceSlider = () => {
 
   return (
     <div className="sliderr">
-      <h2 className='service'>Car Services</h2>
+      <a href="/roadside-assistance" className="service-link" target='_blank'>
+        <h2 className="service">Car Services</h2>
+      </a>
       <div className="sliderr__wrapper" style={{ transform: `translateX(${-currentIndex * (100 / 4)}%)` }}>
         {services.map((service, index) => (
           <div className={`sliderr__slide ${service.viewAll ? 'view-all' : 'div-highlight'}`} key={index}>
@@ -76,7 +74,6 @@ const ServiceSlider = () => {
                 <img src={service.image} alt={service.name} />
                 <div className="sliderr__content">
                   <div style={{fontFamily:"inherit", fontSize:"x-large"}}><h4>{service.name}</h4></div>
-                  <p>{service.availed}</p>
                   <div><strong style={{color:"#ff9800", fontSize:"x-large"}}>{service.price}</strong></div>
                   <a href={service.bookingLink} target="_blank">
                     <button>Book Now</button>
