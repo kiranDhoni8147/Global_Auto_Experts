@@ -8,6 +8,18 @@
   overflow: hidden;
   box-sizing: border-box;
 }
+.service-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
 
 .sliderr h2 {
   text-align: center;
@@ -52,8 +64,7 @@
   margin-top: 20px;
 }
 
-.sliderr__content h3 {
-  font-size: 1.2em;
+.sliderr__content h4 {
   margin: 0.5em 0;
 }
 .sliderr__content p {

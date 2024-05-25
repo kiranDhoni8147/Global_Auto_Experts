@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Nav.css';
 
 const Nav = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -16,11 +22,39 @@ const Nav = () => {
               <a href="/blogs" target="_blank">🖥️ Blogs</a>
             </li>
             <li>
-              <a href="/contact" target="_blank">☎ Contact</a>
+              <a href="#" onClick={toggleModal}>☎ Contact</a>
             </li>
           </ul>
         </div>
       </div>
+
+      {isModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={toggleModal}>&times;</span>
+            <h2>Got a Question? Shoot it!</h2>
+            <form className="contact-form">
+              <div>
+                <input type="radio" id="car" name="vehicle" value="Car" />
+                <label htmlFor="car">Car</label>
+              </div>
+              <input type="text" placeholder="Enter your Name" />
+              <input type="text" placeholder="Enter your Mobile Number" />
+              <input type="email" placeholder="Enter your Email" />
+              <select>
+                <option>Select Inquiry Type</option>
+                <option>General Enquiry</option>
+                <option>Booking status</option>
+                <option>Service status</option>
+                <option>Feedback</option>
+                <option>Others</option>
+              </select>
+              <textarea placeholder="Enter your Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
