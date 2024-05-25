@@ -15,6 +15,7 @@ export const get = async (url, config = {}) => {
 export const post = async (url, data, config = {}) => {
   try {
     const response = await axiosInstance.post(url, data, config);
+    console.log(response);
     return response.data;
   } catch (error) {
     throw error;

@@ -1,26 +1,26 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Blogs from './components/Blogs';
-import Home from './components/Home';
-import PeriodicMaintanence from './components/ServiceSlider/PeriodicMaintanence';
-import AirCondition from './components/ServiceSlider/AirCondition';
-import BatteryReplacement from './components/ServiceSlider/BatteryReplacement';
-import BrakeServices from './components/ServiceSlider/BrakeServices';
-import OilandFilter from './components/ServiceSlider/OilandFilter';
-import Carservicee from './components/Carservicee';
-import Roadsideassistance from './components/Roadsideassistance';
-import Puncture from './components/ServiceSliderr/Puncture';
-import BatteryJump from './components/ServiceSliderr/BatteryJump';
-import MinorRepair from './components/ServiceSliderr/MinorRepair';
-import EmergencyFuel from './components/ServiceSliderr/EmergencyFuel';
-import KeyRecovery from './components/ServiceSliderr/KeyRecovery';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Blogs from "./components/Blogs";
+import Home from "./components/Home";
+import PeriodicMaintanence from "./components/ServiceSlider/PeriodicMaintanence";
+import AirCondition from "./components/ServiceSlider/AirCondition";
+import BatteryReplacement from "./components/ServiceSlider/BatteryReplacement";
+import BrakeServices from "./components/ServiceSlider/BrakeServices";
+import OilandFilter from "./components/ServiceSlider/OilandFilter";
+import Carservicee from "./components/Carservicee";
+import Roadsideassistance from "./components/Roadsideassistance";
+import Puncture from "./components/ServiceSliderr/Puncture";
+import BatteryJump from "./components/ServiceSliderr/BatteryJump";
+import MinorRepair from "./components/ServiceSliderr/MinorRepair";
+import EmergencyFuel from "./components/ServiceSliderr/EmergencyFuel";
+import KeyRecovery from "./components/ServiceSliderr/KeyRecovery";
 
 const App = () => {
   return (
     <Router>
       <div>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/carservicee" element={<Carservicee />} />
           <Route path="/roadsideassistance" element={<Roadsideassistance />} />
