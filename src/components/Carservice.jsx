@@ -6,7 +6,7 @@ const Carservice = () => {
     <nav className="carservice">
       <div className="container">
         <div className="carservice__brand">
-          <a href="/carservice" target="_blank" className="carservice__link">CAR SERVICE</a>
+          <a href="/carservicee" target="_blank" className="carservice__link">CAR SERVICE</a>
           <a href="/roadsideassistance" target="_blank" className="carservice__link">ROAD-SIDE ASSISTANCE</a>
         </div>
       </div>
