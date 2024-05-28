@@ -14,6 +14,8 @@ import BatteryJump from './components/ServiceSliderr/BatteryJump';
 import MinorRepair from './components/ServiceSliderr/MinorRepair';
 import EmergencyFuel from './components/ServiceSliderr/EmergencyFuel';
 import KeyRecovery from './components/ServiceSliderr/KeyRecovery';
+import Aboutus from './components/Aboutus';
+import CarSpa from './components/CarSpa';
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
           <Route path="/booking/minor-repair" element={<MinorRepair />} />
           <Route path="/booking/emergency-fuel" element={<EmergencyFuel />} />
           <Route path="/booking/key" element={<KeyRecovery />} />
+          <Route path='/about' element={<Aboutus/>}/>
+          <Route path='/carspaa' element={<CarSpa/>}/>
         </Routes>
       </div>
     </Router>

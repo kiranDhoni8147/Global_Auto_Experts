@@ -16,14 +16,14 @@ const Footer = () => {
         </div>
         <div className="footer-column">
           <h3>General</h3> <br/>
-          <a href="/about">About Us</a> <br/> <br/>
+          <a href="/about" target='_blank'>About Us</a> <br/> <br/>
           <a href="/blogs">Blogs</a>
         </div>
         <div className="footer-column">
           <h3>Services</h3> <br/>
-          <a href="/service1">Auto-Services</a> <br/> <br/>
-          <a href="/service2">Car Spa</a> <br/> <br/>
-          <a href="/service3">Road Assistance</a> <br/>
+          <a href="/carservicee" target='_blank'>Auto-Services</a> <br/> <br/>
+          <a href="/carspaa" target='_blank'>Car Spa</a> <br/> <br/>
+          <a href="/roadsideassistance" target='_blank'>Road Assistance</a> <br/>
         </div>
         <div className="footer-column">
           <h3>Work Location</h3> <br/>
