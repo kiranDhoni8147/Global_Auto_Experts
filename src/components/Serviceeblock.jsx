@@ -1,9 +1,8 @@
 import React from 'react';
 import './ServiceBlock.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import './Footer.css'
+import './Footer.css';
 import BrandDivision from './BrandDivision';
-
 
 const services = [
   {
@@ -41,61 +40,65 @@ const services = [
 const ServiceeBlock = () => {
   return (
     <div>
-        <div className="service-container">
-      <a href="/roadside-assistance" className="service-link" target='_blank'>
-        <h2 className="service-title">Roadside Assistance Services</h2>
-      </a>
-      <div className="service-grid">
-        {services.map((service, index) => (
-          <div className="service-card" key={index}>
-            <img src={service.image} alt={service.name} className="service-image" />
-            <div className="service-content">
-              <h4 className="service-name">{service.name}</h4>
-              <strong className="service-price">{service.price}</strong>
-              <a href={service.bookingLink} target="_blank" rel="noopener noreferrer">
-                <button className="book-button">Book Now</button>
-              </a>
+      <div className="service-container">
+        <a href="/roadside-assistance" className="service-link" target='_blank'>
+          <h2 className="service-title">Roadside Assistance Services</h2>
+        </a>
+        <div className="service-grid">
+          {services.map((service, index) => (
+            <div className="service-card" key={index}>
+              <div className="service-image-container">
+                <img src={service.image} alt={service.name} className="service-image" />
+              </div>
+              <div className="service-content">
+                <h4 className="service-name">{service.name}</h4>
+                <strong className="service-price">{service.price}</strong>
+                <a href={service.bookingLink} target="_blank" rel="noopener noreferrer">
+                  <button className="book-button">Book Now</button>
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
-      </div> <br/> </div>
-      <BrandDivision/> <br/>
-      <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-column">
-          <img src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png" alt="Company Logo" className="footer-logo" />
-          <p>Global Auto Experts</p>
-          <p>+91 95915 28892</p>
-          <p>info@globalautoexperts.com</p>
-          <p>Bangalore</p>
-          <a href="/terms">All rights reserved</a>
-        </div>
-        <div className="footer-column">
-          <h3>General</h3> <br/>
-          <a href="/about">About Us</a> <br/> <br/>
-          <a href="/blogs">Blogs</a>
-        </div>
-        <div className="footer-column">
-          <h3>Services</h3> <br/>
-          <a href="/service1">Auto-Services</a> <br/> <br/>
-          <a href="/service2">Car Spa</a> <br/> <br/>
-          <a href="/service3">Road Assistance</a> <br/>
-        </div>
-        <div className="footer-column">
-          <h3>Work Location</h3> <br/>
-          <a href="https://www.google.com/maps?q=company+location" target="_blank" rel="noopener noreferrer">
-            Our Location
-          </a>
-        </div>
-        <div className="footer-column social-icons">
-          <h3>Follow Us</h3>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          ))}
         </div>
       </div>
-    </footer>
+      <BrandDivision />
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-column">
+            <img src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png" alt="Company Logo" className="footer-logo" />
+            <p>Global Auto Experts</p>
+            <p>+91 95915 28892</p>
+            <p>info@globalautoexperts.com</p>
+            <p>Bangalore</p>
+            <a href="/terms">All rights reserved</a>
+          </div>
+          <div className="footer-column">
+            <h3>General</h3>
+            <a href="/about">About Us</a>
+            <a href="/blogs">Blogs</a>
+          </div>
+          <div className="footer-column">
+            <h3>Services</h3>
+            <a href="/service1">Auto-Services</a>
+            <a href="/service2">Car Spa</a>
+            <a href="/service3">Road Assistance</a>
+          </div>
+          <div className="footer-column">
+            <h3>Work Location</h3>
+            <a href="https://www.google.com/maps?q=company+location" target="_blank" rel="noopener noreferrer">
+              Our Location
+            </a>
+          </div>
+          <div className="footer-column social-icons">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/globalautoexperts?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <a href="https://www.instagram.com/globalautoexperts?igsh=MW1kd2ZnbHY5ZjhpaA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://www.linkedin.com/company/globalautoexperts/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://x.com/globalautoexpts?t=dyh4ao2dC9ScfEHv3GzB5Q&s=08" target='_blank' rel='noopener noreferrer'>𝕏</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ServiceSteps.css';
+import { FaCalendarAlt, FaCarSide, FaEnvelope, FaMoneyBillWave } from 'react-icons/fa';
 
 const ServiceSteps = () => {
   const [name, setName] = useState('');
@@ -32,25 +33,25 @@ const ServiceSteps = () => {
         <div className="steps">
           <div className="step">
             <div className="circle">
-              <div className="icon">📅</div>
+              <div className="icon"><FaCalendarAlt /></div>
               <p>Book Service</p>
             </div>
           </div>
           <div className="step">
             <div className="circle">
-              <div className="icon">🚗</div>
+              <div className="icon"><FaCarSide /></div>
               <p>Free Pickup</p>
             </div>
           </div>
           <div className="step">
             <div className="circle">
-              <div className="icon">📧</div>
+              <div className="icon"><FaEnvelope /></div>
               <p>Via sms/email</p>
             </div>
           </div>
           <div className="step">
             <div className="circle">
-              <div className="icon">💸</div>
+              <div className="icon"><FaMoneyBillWave /></div>
               <p>Free Drop-Off</p>
             </div>
           </div>
