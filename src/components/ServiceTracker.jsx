@@ -12,7 +12,7 @@ const ServiceTracker = () => {
           <li><span role="img" aria-label="check">✔️</span>Experience complete transparency in service.</li>
         </ul>
       </div>
-      <div className="service-image">
+      <div className="servicee-image">
         <img src="https://thezerohack.com/wp-content/uploads/2018/09/mobile-phone-tracking.jpg" alt="Phone tracking service" />
       </div>
     </div>

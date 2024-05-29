@@ -38,7 +38,7 @@ const services = [
 const ServiceSliderr = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [clickCount, setClickCount] = useState(0);
-  const maxClicks = 1;
+  const maxClicks = 5;
   const totalItems = services.length;
 
   const goToPrevious = () => {
@@ -57,7 +57,7 @@ const ServiceSliderr = () => {
 
   return (
     <div className="sliderr">
-      <a href="/roadside-assistance" className="service-link" target='_blank'>
+      <a href="/roadsideassistance" className="service-link" target='_blank'>
         <h2 className="service">Roadside Assistance Services</h2>
       </a>
       <div className="sliderr__wrapper" style={{ transform: `translateX(${-currentIndex * (100 / 4)}%)` }}>

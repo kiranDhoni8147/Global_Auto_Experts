@@ -16,14 +16,14 @@ const Footer = () => {
         </div>
         <div className="footer-column">
           <h3>General</h3> <br/>
-          <a href="/about">About Us</a> <br/> <br/>
+          <a href="/about" target='_blank'>About Us</a> <br/> <br/>
           <a href="/blogs">Blogs</a>
         </div>
         <div className="footer-column">
           <h3>Services</h3> <br/>
-          <a href="/service1">Auto-Services</a> <br/> <br/>
-          <a href="/service2">Car Spa</a> <br/> <br/>
-          <a href="/service3">Road Assistance</a> <br/>
+          <a href="/carservicee" target='_blank'>Auto-Services</a> <br/> <br/>
+          <a href="/carspaa" target='_blank'>Car Spa</a> <br/> <br/>
+          <a href="/roadsideassistance" target='_blank'>Road Assistance</a> <br/>
         </div>
         <div className="footer-column">
           <h3>Work Location</h3> <br/>
@@ -33,10 +33,11 @@ const Footer = () => {
         </div>
         <div className="footer-column social-icons">
           <h3>Follow Us</h3>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          <a href="https://www.facebook.com/globalautoexperts?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://www.instagram.com/globalautoexperts?igsh=MW1kd2ZnbHY5ZjhpaA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://www.linkedin.com/company/globalautoexperts/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://x.com/globalautoexpts?t=dyh4ao2dC9ScfEHv3GzB5Q&s=08" target='_blank' rel='noopener noreferrer'>𝕏</a>
         </div>
       </div>
     </footer>

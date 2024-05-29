@@ -1,0 +1,30 @@
+/* ServiceBlock.css */
+.service-block {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-block:hover {
+  transform: translateY(-5px);
+}
+
+.service-block h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-block p {
+  font-size: 1rem;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
