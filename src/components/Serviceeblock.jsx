@@ -85,7 +85,7 @@ const ServiceeBlock = () => {
           </div>
           <div className="footer-column">
             <h3>Work Location</h3>
-            <a href="https://www.google.com/maps?q=company+location" target="_blank" rel="noopener noreferrer">
+            <a href="https://maps.app.goo.gl/L2hEW8dDDnvCTknJ8" target="_blank" rel="noopener noreferrer">
               Our Location
             </a>
           </div>

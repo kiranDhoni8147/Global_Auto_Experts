@@ -11,6 +11,7 @@ import ServiceTracker from './ServiceTracker';
 import Testimonials from './Testimonials';
 import BrandDivision from './BrandDivision';
 import Footer from './Footer';
+import ServiceSliderrr from './ServiceSliderrr';
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
         <Carservice /> <br/>
         <ImageSlider /> <br/>
         <ServiceSlider/> <br/>
+        <ServiceSliderrr/> <br/>
         <ServiceSliderr /> <br/>
         <ServiceSteps /> <br/>
         <Advantages /> <br/>

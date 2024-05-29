@@ -17,16 +17,22 @@ const ServicesSection = () => {
             title="Car Detailing"
             description="Revitalize your car's exterior and interior with our professional detailing services."
             image={carDetailingImg}
+            price="Rs. 3299"
+            bookingLink="/booking/car-detailing"
           />
           <ServiceBlock
             title="Car Wash"
             description="Keep your car clean and shining with our thorough and eco-friendly car wash services."
             image={carWashImg}
+            price="Rs. 3299"
+            bookingLink="/booking/car-wash"
           />
           <ServiceBlock
             title="Interior Cleaning"
             description="Restore your car's interior to pristine condition with our deep cleaning and sanitization."
             image={interiorCleaningImg}
+            price="Rs. 3299"
+            bookingLink="/booking/interior-cleaning"
           />
         </div>
       </div>

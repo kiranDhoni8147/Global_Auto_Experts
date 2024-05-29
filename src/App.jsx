@@ -16,6 +16,9 @@ import EmergencyFuel from './components/ServiceSliderr/EmergencyFuel';
 import KeyRecovery from './components/ServiceSliderr/KeyRecovery';
 import Aboutus from './components/Aboutus';
 import CarSpa from './components/CarSpa';
+import CarDetailing from './components/ServiceSliderrr/CarDetailing';
+import CarWash from './components/ServiceSliderrr/CarWash';
+import InteriorCleaning from './components/ServiceSliderrr/InteriorCleaning';
 
 const App = () => {
   return (
@@ -44,6 +47,9 @@ const App = () => {
           <Route path="/booking/battery-jump" element={<BatteryJump />} />
           <Route path="/booking/minor-repair" element={<MinorRepair />} />
           <Route path="/booking/emergency-fuel" element={<EmergencyFuel />} />
+          <Route path="/booking/car-detailing" element={<CarDetailing/>} />
+          <Route path="/booking/car-wash" element={<CarWash/>} />
+          <Route path="/booking/interior-cleaning" element={<InteriorCleaning/>} />
           <Route path="/booking/key" element={<KeyRecovery />} />
           <Route path='/about' element={<Aboutus/>}/>
           <Route path='/carspaa' element={<CarSpa/>}/>
