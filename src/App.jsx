@@ -19,7 +19,6 @@ import CarSpa from './components/CarSpa';
 import CarDetailing from './components/ServiceSliderrr/CarDetailing';
 import CarWash from './components/ServiceSliderrr/CarWash';
 import InteriorCleaning from './components/ServiceSliderrr/InteriorCleaning';
-
 const App = () => {
   return (
     <Router>

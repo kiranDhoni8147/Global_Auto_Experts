@@ -356,7 +356,7 @@ line-height: 1.5rem;
 }
 
 .faq-answer.active {
-max-height: 200px; /* Adjust as needed */
+max-height: 200px;
 padding: 10px;
 }
 
