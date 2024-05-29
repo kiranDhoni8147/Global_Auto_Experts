@@ -22,13 +22,22 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/carservicee" element={<Carservicee />} />
           <Route path="/roadsideassistance" element={<Roadsideassistance />} />
-          <Route path="/booking/periodic-maintenance" element={<PeriodicMaintanence />} />
-          <Route path="/booking/air-condition-system" element={<AirCondition />} />
-          <Route path="/booking/battery-replacement" element={<BatteryReplacement />} />
+          <Route
+            path="/booking/periodic-maintenance"
+            element={<PeriodicMaintanence />}
+          />
+          <Route
+            path="/booking/air-condition-system"
+            element={<AirCondition />}
+          />
+          <Route
+            path="/booking/battery-replacement"
+            element={<BatteryReplacement />}
+          />
           <Route path="/booking/brake-services" element={<BrakeServices />} />
           <Route path="/booking/oil-and-filter" element={<OilandFilter />} />
           <Route path="/booking/puncture" element={<Puncture />} />

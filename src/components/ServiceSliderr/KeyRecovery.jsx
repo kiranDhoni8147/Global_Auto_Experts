@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './Puncture.css'
+import { post } from '../../service/service';
+import { toast } from 'react-toastify';
+import Toaster from '../../spinner/toaster';
+import Spinner from '../../spinner/spinner';
 /*Slideshow*/
 const images = [
   'https://carcooper.com/wp-content/uploads/2018/03/carcooper-image-2.jpg',
@@ -101,9 +105,12 @@ const KeyRecovery = () => {
     message: '',
     otp: '',
     termsAgreed: false,
+    service:'keyRecovery'
   });
   const [serviceCost] = useState(3299);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showToaster, setShowToaster] = useState(false);
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
@@ -137,26 +144,25 @@ const KeyRecovery = () => {
   };
 
   const handleSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
 
     if (!formData.termsAgreed) {
-      alert('You must agree to the terms and conditions to proceed.');
+      alert("You must agree to the terms and conditions to proceed.");
+      setIsLoading(false);
       return;
     }
 
     // Data should be sent to backend
-    const response = await fetch('/api/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-
-    if (response.ok) {
-      alert('Form submitted successfully');
-    } else {
-      alert('Failed to submit form');
+    try {
+      const result = await post("/booknow", formData);
+      setIsLoading(false);
+      setShowToaster(true); 
+      toast.info(result.msg)
+    } catch (err) {
+      setShowToaster(true); 
+      setIsLoading(false);
+      toast.error(err.message);
     }
   };
 
@@ -296,6 +302,8 @@ const KeyRecovery = () => {
           </div>
           <button type="submit">Submit</button>
         </form>
+        <Spinner loading={isLoading} />
+        {showToaster && <Toaster />}
       </div>
       <div className="service-container">
         <div className="service-section">
