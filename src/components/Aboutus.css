@@ -79,44 +79,6 @@
   color: #2e3c3d;
   margin-bottom: 20px;
 }
-
-.team__members {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.team__member {
-  text-align: center;
-  margin: 20px;
-  flex: 1 1 200px;
-  transition: transform 0.5s ease;
-}
-
-.team__member:hover {
-  transform: scale(1.05);
-}
-
-.team__member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.team__member h3 {
-  font-size: 1.5em;
-  margin-bottom: 5px;
-  color: #2d3436;
-  font-family: 'Raleway', sans-serif;
-}
-
-.team__member p {
-  font-size: 1em;
-  color: #636e72;
-}
-
 .mission__content p {
   margin-bottom: 20px;
 }

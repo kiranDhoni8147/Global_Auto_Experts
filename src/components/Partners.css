@@ -1,0 +1,46 @@
+.partners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .partners-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .partner-image {
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .partner-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .partners-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .partner-image {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partners-container h1 {
+      font-size: 1.2rem;
+    }
+  
+    .partner-image {
+      max-width: 100%;
+    }
+  }
+  

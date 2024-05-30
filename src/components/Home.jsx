@@ -12,6 +12,7 @@ import Testimonials from './Testimonials';
 import BrandDivision from './BrandDivision';
 import Footer from './Footer';
 import ServiceSliderrr from './ServiceSliderrr';
+import Partners from './Partners';
 const Home = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const Home = () => {
         <ServiceSlider/> <br/>
         <ServiceSliderrr/> <br/>
         <ServiceSliderr /> <br/>
+        <Partners/>
         <ServiceSteps /> <br/>
         <Advantages /> <br/>
         <TrustedMechanics /> <br/>

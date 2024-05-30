@@ -19,6 +19,8 @@ import CarSpa from './components/CarSpa';
 import CarDetailing from './components/ServiceSliderrr/CarDetailing';
 import CarWash from './components/ServiceSliderrr/CarWash';
 import InteriorCleaning from './components/ServiceSliderrr/InteriorCleaning';
+import DeepSpa from './components/ServiceSliderrr/DeepSpa';
+import Partnersnav from './components/Partnersnav';
 const App = () => {
   return (
     <Router>
@@ -28,18 +30,9 @@ const App = () => {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/carservicee" element={<Carservicee />} />
           <Route path="/roadsideassistance" element={<Roadsideassistance />} />
-          <Route
-            path="/booking/periodic-maintenance"
-            element={<PeriodicMaintanence />}
-          />
-          <Route
-            path="/booking/air-condition-system"
-            element={<AirCondition />}
-          />
-          <Route
-            path="/booking/battery-replacement"
-            element={<BatteryReplacement />}
-          />
+          <Route path="/booking/periodic-maintenance" element={<PeriodicMaintanence />}/>
+          <Route path="/booking/air-condition-system" element={<AirCondition />}/>
+          <Route path="/booking/battery-replacement" element={<BatteryReplacement />} />
           <Route path="/booking/brake-services" element={<BrakeServices />} />
           <Route path="/booking/oil-and-filter" element={<OilandFilter />} />
           <Route path="/booking/puncture" element={<Puncture />} />
@@ -49,9 +42,11 @@ const App = () => {
           <Route path="/booking/car-detailing" element={<CarDetailing/>} />
           <Route path="/booking/car-wash" element={<CarWash/>} />
           <Route path="/booking/interior-cleaning" element={<InteriorCleaning/>} />
+          <Route path='/booking/deep-spa' element={<DeepSpa/>}/>
           <Route path="/booking/key" element={<KeyRecovery />} />
           <Route path='/about' element={<Aboutus/>}/>
           <Route path='/carspaa' element={<CarSpa/>}/>
+          <Route path='/partners' element={<Partnersnav/>}/>
         </Routes>
       </div>
     </Router>

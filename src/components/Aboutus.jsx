@@ -22,21 +22,6 @@ const Aboutus = () => {
         </div>
       </div>
 
-      <div className="section team">
-        <div className="section__content">
-          <h2>Our Team</h2>
-          <p>
-            Meet the people who make it all happen. Our team of dedicated professionals works tirelessly to ensure you receive the best service possible.
-          </p>
-          <div className="team__members">
-            <div className="team__member">
-              <img src={teamMember1Img} alt="Team Member 1" />
-              <h3>RAJ KUMAR</h3>
-              <p>SERIAL ENTREPRENEUR | CEO</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="section mission">
         <div className="section__content">

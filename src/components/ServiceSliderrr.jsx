@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './ServiceSliderrr.css';
 import carDetailingImg from './CarSpa/car-detailing..jpg';
 import carWashImg from './CarSpa/station-detaillant-lavage-voiture_1303-22319.avif';
 import interiorCleaningImg from './CarSpa/cleaning.jpg';
-
+import deepspaImg from './CarSpa/deep-all.jpg';
 const services = [
   {
     image: carDetailingImg,
@@ -23,6 +22,12 @@ const services = [
     name: 'Interior Cleaning',
     price: '₹1999',
     bookingLink: '/booking/interior-cleaning',
+  },
+  {
+    image: deepspaImg,
+    name: 'Deep All Round Spa',
+    price: '₹1999',
+    bookingLink: '/booking/deep-spa',
   },
 ];
 

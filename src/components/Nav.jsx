@@ -24,6 +24,9 @@ const Nav = () => {
             <li>
               <a href="#" onClick={toggleModal}>☎ Contact</a>
             </li>
+            <li>
+              <a href="/partners" target="_blank">🤝 Partners</a>
+            </li>
           </ul>
         </div>
       </div>
