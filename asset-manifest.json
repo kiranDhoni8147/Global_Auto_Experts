@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/%7Brepo-name%7D/static/css/main.cceaf275.css",
+    "main.js": "/%7Brepo-name%7D/static/js/main.3cc4ac39.js",
+    "static/media/Screenshot (299).png": "/%7Brepo-name%7D/static/media/Screenshot (299).cecc4d146369c18a6439.png",
+    "static/media/cleaning.jpg": "/%7Brepo-name%7D/static/media/cleaning.c81890d1304d77ba0fa4.jpg",
+    "static/media/car-detailing..jpg": "/%7Brepo-name%7D/static/media/car-detailing..d93bf173a960aae3f900.jpg",
+    "static/media/deep-all.jpg": "/%7Brepo-name%7D/static/media/deep-all.552dec830c2192e55de3.jpg",
+    "static/media/station-detaillant-lavage-voiture_1303-22319.avif": "/%7Brepo-name%7D/static/media/station-detaillant-lavage-voiture_1303-22319.c3a5f087fec91a011a84.avif",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "main.cceaf275.css.map": "/%7Brepo-name%7D/static/css/main.cceaf275.css.map",
+    "main.3cc4ac39.js.map": "/%7Brepo-name%7D/static/js/main.3cc4ac39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cceaf275.css",
+    "static/js/main.3cc4ac39.js"
+  ]
+}
