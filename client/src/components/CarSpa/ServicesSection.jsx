@@ -1,11 +1,10 @@
 import React from 'react';
 import ServiceBlock from './ServiceBlock';
 import './ServicesSection.css';
-
-// Import your service images
 import carDetailingImg from './car-detailing..jpg';
 import carWashImg from './station-detaillant-lavage-voiture_1303-22319.avif';
 import interiorCleaningImg from './cleaning.jpg';
+import deepspaImg from './deep-all.jpg';
 
 const ServicesSection = () => {
   return (
@@ -33,6 +32,13 @@ const ServicesSection = () => {
             image={interiorCleaningImg}
             price="Rs. 3299"
             bookingLink="/booking/interior-cleaning"
+          />
+          <ServiceBlock
+            title="Deep All Sound Spa"
+            description="Revitalize your car's exterior and interior with our professional detailing services, including thorough cleaning, waxing, polishing, and protective treatments for a pristine finish."
+            image={deepspaImg}
+            price="Rs. 3299"
+            bookingLink="/booking/deep-spa"
           />
         </div>
       </div>

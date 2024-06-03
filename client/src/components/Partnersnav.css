@@ -1,0 +1,267 @@
+
+
+/* Partnersnav.css */
+
+/* NavBar */
+.navbarr {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbarr__logo {
+    height: 60px;
+    width: auto;
+}
+.navbarr .containerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbarr__brand {
+    flex: 1;
+}
+.navbarr__links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navbarr__links ul li {
+    margin-right: 20px;
+}
+.navbarr__links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.navbarr__links ul li a:hover {
+    transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.contact-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+.contact-form button {
+    background-color: #ffab40;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #ff7a00;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 20px;
+}
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn7.dissolve.com/p/D9_35_221/D9_35_221_1200.jpg') no-repeat center center/cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.overlay-text {
+    text-align: left;
+    margin-left: 50px;
+    color: white;
+    flex: 1;
+}
+.overlay-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    margin-right: 50px;
+}
+.partner-form .form-group {
+    margin-bottom: 15px;
+}
+.partner-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+.partner-form input,
+.partner-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.partner-form .submit-button {
+    background-color: #ffab40;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.partner-form .submit-button:hover {
+    background-color: #ff7a00;
+}
+
+/* Radio Button Styles */
+.workshop-type-options {
+    display: flex;
+    align-items: center;
+}
+.workshop-type-options input[type="radio"] {
+    display: none;
+}
+.workshop-type-label {
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+}
+.workshop-type-label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: white;
+    transition: 0.3s;
+}
+.workshop-type-options input[type="radio"]:checked + .workshop-type-label:before {
+    border-color: #ffab40;
+    background: #ffab40;
+    box-shadow: 0 0 5px rgba(255, 171, 64, 0.6);
+}
+.workshop-type-label:hover:before {
+    border-color: #ff7a00;
+}
+
+/* Custom Animations */
+.workshop-type-options input[type="radio"]:checked + .workshop-type-label:before {
+    animation: radio-select 0.3s ease-in-out;
+}
+@keyframes radio-select {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Stats Section */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Workshop Owner Section */
+.workshop-owner-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.benefit-box {
+    text-align: center;
+    margin: 0 20px;
+    flex: 0 1 200px; 
+    max-width: 200px; 
+}
+.benefit-title {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+.benefit-box p {
+    margin: 5px 0;
+}
+.benefit-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
