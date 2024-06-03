@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaShieldAlt, FaCheckCircle, FaTools, FaCarSide, FaDollarSign } from 'react-icons/fa';
+import { FaShieldAlt, FaCheckCircle, FaTools, FaCarSide, FaRupeeSign } from 'react-icons/fa';
 import './Advantages.css';
 
 const Advantages = () => {
@@ -8,7 +8,7 @@ const Advantages = () => {
     { icon: <FaCheckCircle />, title: '100% GUARANTEED', description: '' },
     { icon: <FaTools />, title: 'Expert Technicians', description: '' },
     { icon: <FaCarSide />, title: 'FREE', description: 'Pickup & Drop' },
-    { icon: <FaDollarSign />, title: 'Upto 40%', description: 'Save on Bills' },
+    { icon: <FaRupeeSign />, title: 'Upto 40%', description: 'Save on Bills' },
   ];
 
   return (

@@ -58,7 +58,7 @@ const ServiceSliderr = () => {
   return (
     <div className="sliderr">
       <a href="/roadsideassistance" className="service-link" target='_blank'>
-        <h2 className="service">Roadside Assistance Services</h2>
+        <h2 className="service">24/7 Roadside Assistance</h2>
       </a>
       <div className="sliderr__wrapper" style={{ transform: `translateX(${-currentIndex * (100 / 4)}%)` }}>
         {services.map((service, index) => (
