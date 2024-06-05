@@ -44,7 +44,7 @@ const ServiceSliderrr = () => {
   };
 
   return (
-    <div className="sliderrr">
+    <div className="sliderrr sliderr-fixed">
       <a href="/carspaa" className="service-link" target='_blank' rel='noopener noreferrer'>
         <h2 className="service">Car Spa Services</h2>
       </a>

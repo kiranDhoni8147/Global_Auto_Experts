@@ -8,6 +8,10 @@
   overflow: hidden;
   box-sizing: border-box;
 }
+
+.sliderr-fixed{
+  position: fixed !important;
+}
 .service-link {
   text-decoration: none;
   color: inherit;
