@@ -35,7 +35,7 @@ const ServiceSliderrr = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [clickCount, setClickCount] = useState(0);
   const totalItems = services.length;
-  const maxClicks = 5;
+  const maxClicks = totalItems - 1;
 
   const goToPrevious = () => {
     if (clickCount > 0) {
@@ -61,7 +61,7 @@ const ServiceSliderrr = () => {
       >
         <h2 className="service">Car Spa Service</h2>
       </a>
-      <div className="sliderrr__wrapper" style={{ transform: `translateX(${-currentIndex * (100 / 4)}%)` }}>
+      <div className="sliderrr__wrapper" style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
         {services.map((service, index) => (
           <div className="sliderrr__slide" key={index}>
             <img src={service.image} alt={service.name} />
