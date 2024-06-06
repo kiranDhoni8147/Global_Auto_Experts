@@ -1,4 +1,6 @@
 .brand-division {
+    margin: 0 20px;
+    margin-bottom: 50px;
     background-color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -8,13 +10,20 @@
   }
   
   .car-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    /* gap: 20px; */
+    /* justify-items: center; */
+    /* height: 50%; */
+    /* width: 50%; */
+    /* margin-left: 25%; */
+    display: flex;
+    overflow: scroll;
     gap: 20px;
-    justify-items: center;
-    height: 50%;
-    width: 50%;
-    margin-left: 25%;
+  }
+  .car-list::-webkit-scrollbar {
+    height: 0;
+    width: 0;
   }
   
   .car-item {

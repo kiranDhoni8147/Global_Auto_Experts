@@ -38,8 +38,8 @@ const services = [
 const ServiceSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [clickCount, setClickCount] = useState(0);
-  const maxClicks = 5;
   const totalItems = services.length;
+  const maxClicks = totalItems - 1;
 
   const goToPrevious = () => {
     if (clickCount > 0) {
@@ -60,7 +60,7 @@ const ServiceSlider = () => {
       <a href="/carservicee" className="service-link" target='_blank'>
         <h2 className="service">Car Services</h2>
       </a>
-      <div className="sliderr__wrapper" style={{ transform: `translateX(${-currentIndex * (100 / 4)}%)` }}>
+      <div className="sliderr__wrapper" style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
         {services.map((service, index) => (
           <div className={`sliderr__slide ${service.viewAll ? 'view-all' : 'div-highlight'}`} key={index}>
             {service.viewAll ? (

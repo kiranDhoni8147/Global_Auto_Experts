@@ -21,6 +21,7 @@ import CarWash from './components/ServiceSliderrr/CarWash';
 import InteriorCleaning from './components/ServiceSliderrr/InteriorCleaning';
 import DeepSpa from './components/ServiceSliderrr/DeepSpa';
 import Partnersnav from './components/Partnersnav';
+import './components/correction.css'
 const App = () => {
   return (
     <Router>
