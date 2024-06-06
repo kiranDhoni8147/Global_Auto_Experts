@@ -130,7 +130,7 @@
 
 @media (max-width: 768px) {
   .sliderrr__slide {
-    flex: 0 0 80%;
+    flex: 0 0 100%;
   }
 
   .sliderrr__slide img {
