@@ -26,9 +26,9 @@ const Roadsideassistance = () => {
       </nav>{" "}
       <br /> <br />
       <div className="carservicee">
-        <div div className="container1"> <br/> <br />
-        <h2>Road Side Assistance</h2>
-          <p style={{ marginLeft: "1rem", marginRight: "1rem" }}>
+        <div div className="container1">
+        <h2 id="road-side-title" style={{marginLeft: '30px', marginTop: '0px', marginBottom:'40px', fontSize:'18px'}}>Road Side Assistance</h2>
+          <p style={{ marginLeft: "1rem", marginRight: "1rem", fontSize:"16px" }}>
             Global Auto Experts is your top choice for 24/7 roadside assistance
             in Bangalore. We provide a comprehensive range of services,
             including emergency car repairs, maintenance, and full servicing.

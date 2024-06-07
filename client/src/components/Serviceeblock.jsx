@@ -42,7 +42,7 @@ const ServiceeBlock = () => {
     <div>
       <div className="service-container">
         <a href="/roadside-assistance" className="service-link" target='_blank'>
-          <h2 className="service-title">Roadside Assistance Services</h2>
+          <h2 className="service-title">Road Side Assistance Services</h2>
         </a>
         <div className="service-grid">
           {services.map((service, index) => (

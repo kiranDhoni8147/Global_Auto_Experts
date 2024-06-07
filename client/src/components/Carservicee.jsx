@@ -28,7 +28,7 @@ const Carservicee = () => {
       <div className="carservicee">
         <div div className="container1">
           <h2>🚗 Car Service</h2>
-          <p style={{ marginLeft: "1rem", marginRight: "1rem" }}>
+          <p style={{ marginLeft: "1rem", marginRight: "1rem", fontSize:"16px"  }}>
             Global Auto Experts stands as the premier choice for automotive
             servicing in Bangalore. We offer an extensive array of services,
             encompassing car repairs, maintenance, and comprehensive servicing.
