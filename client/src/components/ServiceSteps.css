@@ -93,7 +93,7 @@ input[type="text"] {
 
 button {
   padding: 10px;
-  background-color: #57D2FB;
+  background-color: #124390;
   color: white;
   border: none;
   border-radius: 5px;
@@ -101,5 +101,5 @@ button {
 }
 
 button:hover {
-  background-color: #57D2FB;
+  background-color: #124390;
 }

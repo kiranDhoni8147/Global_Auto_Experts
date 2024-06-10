@@ -8,7 +8,7 @@ const ServiceBlock = ({ title, description, image, price, bookingLink }) => {
       <img src={image} alt={title} className="service-image" />
       <h3>{title}</h3>
       <p>{description}</p>
-      <h3 style={{color:"#57D2FB"}}>{price}</h3>
+      <h3 style={{color:"#124390"}}>{price}</h3>
       <Link to={bookingLink}>
         <button className="book-now-btn">Book Now</button>
       </Link>

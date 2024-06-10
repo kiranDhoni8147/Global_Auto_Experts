@@ -2,7 +2,7 @@ p {
   font-size: 20px;
 }
 .navbar {
-    background-color: #57D2FB;
+    background-color: #124390;
     padding: 1rem;
   }
   .container {
@@ -402,7 +402,7 @@ p {
   }
   
   .testimonial-card {
-    background: #57D2FB;
+    background: #124390;
     border-radius: 10px ;
     padding: 20px;
     width: 300px;
@@ -418,7 +418,7 @@ p {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-    border: 2px solid orange;
+    border: 2px solid #124390;
   }
   .testimonial-image:hover {
     transform: scale(1.1); 

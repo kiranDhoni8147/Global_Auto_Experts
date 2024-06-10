@@ -80,7 +80,7 @@
 
 .sliderr__content button {
   padding: 10px 20px;
-  background-color: #57D2FB;
+  background-color: #124390;
   border: none;
   color: black;
   cursor: pointer;
@@ -89,7 +89,7 @@
 }
 
 .sliderr__content button:hover {
-  background-color: #57D2FB;
+  background-color: #124390;
   transform: scale(1.1);
 }
 
@@ -103,7 +103,7 @@
 
 .view-all button {
   padding: 10px 20px;
-  background-color: #57D2FB;
+  background-color: #124390;
   border: none;
   color: white;
   cursor: pointer;
@@ -122,7 +122,7 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: #57D2FB;
+  color: #124390;
 }
 
 .sliderr__button {

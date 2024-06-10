@@ -32,12 +32,14 @@
   }
   
   .testimonial-image {
-    width: 95px;
-    height: 95px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 2px solid orange;
+    width: 95px !important;
+    height: 95px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin-bottom: 10px !important;
+    /* border: 2px solid orange; */
+    background: white !important;
+    padding: 5px !important;
   }
   .testimonial-image:hover {
     transform: scale(1.1); 

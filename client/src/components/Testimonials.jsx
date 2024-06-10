@@ -1,19 +1,21 @@
 import React from 'react';
 import './Testimonials.css';
+import user from '../asset/user.png'
+
 
 const testimonials = [
   {
-    image: "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg",
+    image: user,
     description: "Always on time, efficient and completely trustworthy!",
     name: "Sampoorna James",
   },
   {
-    image: "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg",
+    image: user,
     description: "Excellent Service and Friendly Staff",
     name: "Rashmitha Rani",
   },
   {
-    image: "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg",
+    image: user,
     description: "Wonderful Service! This was an absolute life-saver. They fixed my car in a timely and cost-effective manner. The customer service is so good too! I would recommend this to anyone.",
     name: "Sneha Kapoor",
   },

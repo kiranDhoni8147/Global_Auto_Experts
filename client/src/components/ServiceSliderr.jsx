@@ -74,7 +74,7 @@ const ServiceSliderr = () => {
                 <img src={service.image} alt={service.name} />
                 <div className="sliderr__content">
                   <div style={{ fontFamily: "inherit", fontSize: "x-large" }}><h4>{service.name}</h4></div>
-                  <div><strong style={{ color: "#57D2FB", fontSize: "x-large" }}>{service.price}</strong></div>
+                  <div><strong style={{ color: "#124390", fontSize: "x-large" }}>{service.price}</strong></div>
                   <a href={service.bookingLink} target="_blank"><button>Book Now</button></a>
                 </div>
               </>
