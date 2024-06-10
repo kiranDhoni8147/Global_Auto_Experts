@@ -28,12 +28,12 @@
   }
   
   .navbar ul li a {
-    color: #333;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .navbar ul li a:hover {
-    color: #ff9800;
+    color: white;
   }
   

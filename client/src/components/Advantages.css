@@ -28,13 +28,14 @@
 
 .circle {
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #57D2FB;
   padding: 20px;
   border-radius: 50%;
   width: 200px;
   height: 180px;
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .icon {
@@ -49,5 +50,5 @@
 
 .description {
   font-size: 1rem;
-  color: #666;
+  color: white;
 }

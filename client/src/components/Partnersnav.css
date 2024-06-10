@@ -90,13 +90,13 @@
     font-size: 16px;
 }
 .contact-form button {
-    background-color: #ffab40;
-    color: white;
+    background-color: #57D2FB;
+    color: black;
     border: none;
     cursor: pointer;
 }
 .contact-form button:hover {
-    background-color: #ff7a00;
+    background-color: #57D2FB;
 }
 
 /* Main Content */
@@ -161,14 +161,14 @@
     border-radius: 5px;
 }
 .partner-form .submit-button {
-    background-color: #ffab40;
+    background-color: #57D2FB;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
 }
 .partner-form .submit-button:hover {
-    background-color: #ff7a00;
+    background-color: #57D2FB;
 }
 
 /* Radio Button Styles */
@@ -200,12 +200,12 @@
     transition: 0.3s;
 }
 .workshop-type-options input[type="radio"]:checked + .workshop-type-label:before {
-    border-color: #ffab40;
-    background: #ffab40;
-    box-shadow: 0 0 5px rgba(255, 171, 64, 0.6);
+    border-color: #57D2FB;
+    background: #57D2FB;
+    box-shadow: 0 0 5px #57D2FB;
 }
 .workshop-type-label:hover:before {
-    border-color: #ff7a00;
+    border-color: #57D2FB;
 }
 
 /* Custom Animations */
