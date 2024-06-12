@@ -23,7 +23,7 @@
   
   .carservice__link {
     text-decoration: none;
-    color: #124390;
+    color: #ffab40;
     font-size: 17px;
     font-weight: 600px;
     padding: 10px;
@@ -32,7 +32,7 @@
   }
   
   .carservice__link:hover {
-    background-color: #124390;
+    background-color: #ffab40;
     color: white;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);

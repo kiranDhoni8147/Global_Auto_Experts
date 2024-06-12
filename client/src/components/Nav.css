@@ -30,7 +30,7 @@
 }
 .navbar__links ul li a {
   text-decoration: none;
-  color:#124390 ;
+  color:#ffab40 ;
   font-size: x-large;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
@@ -89,11 +89,11 @@
   font-size: 16px;
 }
 .contact-form button {
-  background-color: #124390;
+  background-color: #ffab40;
   color: white;
   border: none;
   cursor: pointer;
 }
 .contact-form button:hover {
-  background-color: #124390;
+  background-color: #ffab40;
 }

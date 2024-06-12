@@ -75,7 +75,7 @@
 }
 
 .sliderrr__content .price {
-  color: #124390;
+  color: #ffab40;
   font-size: x-large;
   margin-top: 0.5em 0;
   font-weight: bold;
@@ -83,7 +83,7 @@
 
 .sliderrr__content .book-now-btn {
   padding: 10px 20px;
-  background-color: #124390;
+  background-color: #ffab40;
   border: none;
   color:white;
   cursor: pointer;
@@ -92,7 +92,7 @@
 }
 
 .sliderrr__content .book-now-btn:hover {
-  background-color: #124390;
+  background-color: #ffab40;
   transform: scale(1.1);
 }
 
