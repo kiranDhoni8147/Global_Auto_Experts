@@ -3,12 +3,63 @@ import "./Partnersnav.css";
 import BrandDivision from "./BrandDivision";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
+import { post } from "../service/service";
+import Spinner from "../spinner/spinner";
+// import Toaster from "../../spinner/toaster";
+import Toaster from "../spinner/toaster";
+import { toast } from "react-toastify";
 
 const Partnersnav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showToaster, setShowToaster] = useState(false);
+  const [formData, setFormData] = useState({
+    workshoptype: "",
+    contactpersonname: "",
+    phone: "",
+    locality: "",
+    workshopname: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    console.log(type, checked);
+    
+    if (type === "radio" && name === "workshoptype" && checked) {
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    } 
+    else {
+      setFormData({
+        ...formData,
+        [name]: type === "checkbox" ? checked : value
+      });
+    }
+  };
+  
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
+  };
+
+  const handleSubmit = async (e) => {
+    setIsLoading(true);
+    e.preventDefault();
+    console.log(formData);
+    // Data should be sent to backend
+    try {
+      const result = await post("http://localhost:5000/api/partners", formData);
+      setIsLoading(false);
+      setShowToaster(true);
+      toast.info(result.msg);
+    } 
+    catch (err) {
+      setShowToaster(true);
+      setIsLoading(false);
+      toast.error(err.message);
+    }
   };
 
   return (
@@ -83,16 +134,17 @@ const Partnersnav = () => {
             </div>
             <div className="form-container">
               <h2>Become a Global Auto Expert Partner</h2>
-              <form className="partner-form">
+              <form className="partner-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="workshopType">Workshop Type</label>
                   <div className="workshop-type-options">
                     <input
                       type="radio"
                       id="carWorkshop"
-                      name="workshopType"
+                      name="workshoptype"
                       value="Car Workshop"
                       defaultChecked
+                      onChange={handleChange}
                     />
                     <label
                       htmlFor="carWorkshop"
@@ -103,8 +155,9 @@ const Partnersnav = () => {
                     <input
                       type="radio"
                       id="sparesRetailer"
-                      name="workshopType"
+                      name="workshoptype"
                       value="Spares Retailer"
+                      onChange={handleChange}
                     />
                     <label
                       htmlFor="sparesRetailer"
@@ -119,7 +172,9 @@ const Partnersnav = () => {
                   <input
                     type="text"
                     id="contactPerson"
-                    name="contactPerson"
+                    name="contactpersonname"
+                    value={formData.contactpersonname}
+                    onChange={handleChange}
                     placeholder="Enter your Name"
                     required
                   />
@@ -129,7 +184,9 @@ const Partnersnav = () => {
                   <input
                     type="text"
                     id="mobileNumber"
-                    name="mobileNumber"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     placeholder="Enter your Mobile Number"
                     required
                   />
@@ -140,6 +197,8 @@ const Partnersnav = () => {
                     type="text"
                     id="locality"
                     name="locality"
+                    value={formData.locality}
+                    onChange={handleChange}
                     placeholder="Enter your Locality"
                     required
                   />
@@ -149,7 +208,9 @@ const Partnersnav = () => {
                   <input
                     type="text"
                     id="workshopName"
-                    name="workshopName"
+                    name="workshopname"
+                    value={formData.workshopname}
+                    onChange={handleChange}
                     placeholder="Enter your Workshop Name"
                     required
                   />
@@ -158,6 +219,8 @@ const Partnersnav = () => {
                   REQUEST A CALL
                 </button>
               </form>
+              <Spinner loading={isLoading} />
+              {showToaster && <Toaster />}
             </div>
           </div>
         </div>
