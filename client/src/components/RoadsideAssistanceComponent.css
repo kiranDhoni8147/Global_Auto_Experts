@@ -1,0 +1,63 @@
+.roadside-assistance {
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .section-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .roadside-assistance h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .roadside-assistance .problems {
+    margin-bottom: 30px;
+  }
+  
+  .roadside-assistance .problems h3,
+  .roadside-assistance .company-includes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .roadside-assistance ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .roadside-assistance ul li {
+    margin-bottom: 10px;
+  }
+  
+  .roadside-assistance .company-includes ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .roadside-assistance .company-includes ul li {
+    background-color: orange;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .roadside-assistance .company-includes ul li:hover {
+    background-color: #ffab40;
+    transform: scale(1.1);
+  }
+  

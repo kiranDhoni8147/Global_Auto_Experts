@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 import Blogs from './components/Blogs';
 import Home from './components/Home';
 import PeriodicMaintanence from './components/ServiceSlider/PeriodicMaintanence';

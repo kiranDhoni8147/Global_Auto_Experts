@@ -1,6 +1,5 @@
-
 /* Common styles for all links */
-.carservice__link{
+.carservice__link {
   text-decoration: none;
   color: black;
   font-size: 19px;
@@ -8,9 +7,10 @@
   padding: 10px;
   display: inline-block;
   transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
 }
 
-.carservice__link:hover{
+.carservice__link:hover {
   background-color: #f0f0f0;
   color: orange;
   transform: scale(1.1);
@@ -24,10 +24,38 @@
   box-shadow: 0 2px 4px white;
   padding-left: 1.6%;
   padding-top: 0.5%;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 999;
+}
+
+.main-content {
+  margin-top: 160px;
 }
 
 .carservice .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+.carservice__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .carservice__link {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .carservice .container {
+    overflow-x: auto;
+  }
 }

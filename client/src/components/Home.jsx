@@ -15,6 +15,9 @@ import ServiceSliderrr from './ServiceSliderrr';
 import Partners from './Partners';
 import SubscriptionBox from './SubscriptionBox';
 import Services from './Services';
+import PriceComparisonChart from './PriceComparisonChart';
+import RoadsideAssistanceComponent from './RoadsideAssistanceComponent';
+import LaunchingSoonComponent from './LaunchingSoonComponent';
 const Home = () => {
   return (
     <div>
@@ -26,11 +29,14 @@ const Home = () => {
         <ServiceSliderrr/> <br/>
         <ServiceSliderr /> <br/> <br/>
         <SubscriptionBox/> <br/>
+        <PriceComparisonChart/> <br/>
         <Partners/> <br/>
         <ServiceSteps /> <br/>
         <Advantages /> <br/>
         <TrustedMechanics /> <br/>
         <ServiceTracker /> <br/>
+        <RoadsideAssistanceComponent/> <br/>
+        <LaunchingSoonComponent/> <br/>
         <Testimonials /> <br/>
         <BrandDivision /> <br/>
         <Footer />

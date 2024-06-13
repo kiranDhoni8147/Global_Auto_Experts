@@ -1,0 +1,82 @@
+.price-comparison-chart {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .price-comparison-chart h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .price-comparison-chart h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+  }
+  
+  .price-comparison-chart h2:hover::after {
+    width: 100%;
+  }
+  
+  .price-comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .comparison-division {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-icon {
+    font-size: 100px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .garage-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .scratched-price {
+    text-decoration: line-through;
+    color: red;
+  }
+  
+  .global-experts-price {
+    font-weight: bolder;
+    color: orange;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: orange;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .price-comparison-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaCar } from 'react-icons/fa';
 import './TrustedMechanics.css';
@@ -7,7 +6,7 @@ const TrustedMechanics = () => {
   return (
     <div className="trusted-mechanics">
       <div className="icon-container">
-        <FaCar className="car-icon" />
+        <FaCar className="car-iconn" />
       </div>
       <div className="mechanics-info">
         <h2>Reliable Automotive Experts</h2>
