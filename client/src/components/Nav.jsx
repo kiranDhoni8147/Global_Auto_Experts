@@ -6,7 +6,6 @@ const Nav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
-    car: false,
     name: "",
     phone: "",
     email: "",
@@ -15,10 +14,10 @@ const Nav = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? checked : value
+      [name]: value
     });
   };
 
@@ -75,8 +74,7 @@ const Nav = () => {
                 </span>
                 <h2>Got a Question? Shoot it!</h2>
                 <form className="contact-form">
-                  <div>
-                    <input type="radio" id="car" name="vehicle" value="Car" />
+                  <div className="radio-container">
                     <label htmlFor="car">Car</label>
                   </div>
                   <input

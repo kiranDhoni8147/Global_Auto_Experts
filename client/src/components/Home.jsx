@@ -14,15 +14,17 @@ import Footer from './Footer';
 import ServiceSliderrr from './ServiceSliderrr';
 import Partners from './Partners';
 import SubscriptionBox from './SubscriptionBox';
+import Services from './Services';
 const Home = () => {
   return (
     <div>
         <Nav /> <br/>
         <Carservice /> <br/>
         <ImageSlider /> <br/>
+        <Services/> <br/>
         <ServiceSlider/> <br/>
         <ServiceSliderrr/> <br/>
-        <ServiceSliderr /> <br/>
+        <ServiceSliderr /> <br/> <br/>
         <SubscriptionBox/> <br/>
         <Partners/> <br/>
         <ServiceSteps /> <br/>

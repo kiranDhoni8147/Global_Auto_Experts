@@ -10,6 +10,7 @@ nav.navbar {
   position: relative;
 }
 
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -108,10 +109,6 @@ nav.navbar {
   flex-direction: column;
 }
 
-.contact-form div {
-  margin-bottom: 10px;
-}
-
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
@@ -137,6 +134,10 @@ nav.navbar {
   background-color: darkorange;
 }
 
+.contact-form div {
+  margin-bottom: 10px;
+}
+
 /* Responsive navbar */
 @media (max-width: 768px) {
   .navbar__menu {
@@ -148,7 +149,7 @@ nav.navbar {
     width: 100%;
     display: none;
   }
-  
+
   .navbar__menu li {
     margin: 10px 0;
   }

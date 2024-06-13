@@ -22,6 +22,7 @@ import InteriorCleaning from './components/ServiceSliderrr/InteriorCleaning';
 import DeepSpa from './components/ServiceSliderrr/DeepSpa';
 import Partnersnav from './components/Partnersnav';
 import './components/correction.css'
+import SubscribePage from './components/SubscribePage';
 const App = () => {
   return (
     <Router>
@@ -30,7 +31,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/carservicee" element={<Carservicee />} />
+          <Route path="/auto-services" element={<Carservicee/>}/>
           <Route path="/roadsideassistance" element={<Roadsideassistance />} />
+          <Route path="/roadside-assistance" element={<Roadsideassistance />}/>
           <Route path="/booking/periodic-maintenance" element={<PeriodicMaintanence />}/>
           <Route path="/booking/air-condition-system" element={<AirCondition />}/>
           <Route path="/booking/battery-replacement" element={<BatteryReplacement />} />
@@ -47,7 +50,9 @@ const App = () => {
           <Route path="/booking/key" element={<KeyRecovery />} />
           <Route path='/about' element={<Aboutus/>}/>
           <Route path='/carspaa' element={<CarSpa/>}/>
+          <Route path='/car-spa' element={<CarSpa/>}/>
           <Route path='/partners' element={<Partnersnav/>}/>
+          <Route path="/subscribe" element={<SubscribePage/>} />
         </Routes>
       </div>
     </Router>

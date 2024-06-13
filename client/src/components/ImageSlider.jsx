@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './ImageSlider.css';
 
 const images = [
-  'https://t3.ftcdn.net/jpg/04/96/48/30/360_F_496483060_C9OG1wJpfmjMXcNmUBibmA9wYxxZCxnW.jpg',
-  'https://www.shutterstock.com/image-photo/worker-washing-red-car-sponge-600nw-1859193349.jpg',
-  'https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=',
+  'http://hdqwalls.com/wallpapers/orange-lamborghini-huracan-ja.jpg',
+  'https://wallpaperaccess.com/full/2085166.jpg',
+  'https://wallpaperaccess.com/full/2085201.jpg',
 ];
 
 const ImageSlider = () => {
