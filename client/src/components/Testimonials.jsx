@@ -1,22 +1,20 @@
 import React from 'react';
 import './Testimonials.css';
-import user from '../asset/user.png'
-
 
 const testimonials = [
   {
-    image: user,
+    image: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem-person-orange.svg/1024px-Emblem-person-orange.svg.png",
     description: "Always on time, efficient and completely trustworthy!",
     name: "Sampoorna James",
   },
   {
-    image: user,
+    image: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem-person-orange.svg/1024px-Emblem-person-orange.svg.png",
     description: "Excellent Service and Friendly Staff",
     name: "Rashmitha Rani",
   },
   {
-    image: user,
-    description: "Wonderful Service! This was an absolute life-saver. They fixed my car in a timely and cost-effective manner. The customer service is so good too! I would recommend this to anyone.",
+    image: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem-person-orange.svg/1024px-Emblem-person-orange.svg.png",
+    description: "Fantastic service! They fixed my car quickly and affordably. Excellent customer service too. Highly recommend",
     name: "Sneha Kapoor",
   },
 ];

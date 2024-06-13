@@ -13,6 +13,7 @@ import BrandDivision from './BrandDivision';
 import Footer from './Footer';
 import ServiceSliderrr from './ServiceSliderrr';
 import Partners from './Partners';
+import SubscriptionBox from './SubscriptionBox';
 const Home = () => {
   return (
     <div>
@@ -22,7 +23,8 @@ const Home = () => {
         <ServiceSlider/> <br/>
         <ServiceSliderrr/> <br/>
         <ServiceSliderr /> <br/>
-        <Partners/>
+        <SubscriptionBox/> <br/>
+        <Partners/> <br/>
         <ServiceSteps /> <br/>
         <Advantages /> <br/>
         <TrustedMechanics /> <br/>

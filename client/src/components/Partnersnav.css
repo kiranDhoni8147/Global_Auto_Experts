@@ -1,33 +1,33 @@
 /* NavBar */
-.navbarr {
+.navbarrr {
     background-color: #ffffff;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.navbarr__logo {
+.navbarrr__logo {
     height: 60px;
     width: auto;
 }
-.navbarr .containerr {
+.navbarrr .containerrr {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.navbarr__brand {
+.navbarrr__brand {
     flex: 1;
 }
-.navbarr__links ul {
+.navbarrr__links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
 }
-.navbarr__links ul li {
+.navbarrr__links ul li {
     margin-right: 20px;
 }
-.navbarr__links ul li a {
+.navbarrr__links ul li a {
     text-decoration: none;
     color: black;
     font-size: x-large;
@@ -37,12 +37,12 @@
     display: inline-block;
     padding-bottom: 5px;
 }
-.navbarr__links ul li a:hover {
+.navbarrr__links ul li a:hover {
     transform: scale(1.1);
 }
 
 /* Modal */
-.modal {
+.modall {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-content {
+.modall-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -65,37 +65,37 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
 }
-.close {
+.closee {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-.close:hover,
-.close:focus {
+.closee:hover,
+.closee:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
-.contact-form {
+.contact-formm {
     display: flex;
     flex-direction: column;
 }
-.contact-form input,
-.contact-form select,
-.contact-form textarea,
-.contact-form button {
+.contact-formm input,
+.contact-formm select,
+.contact-formm textarea,
+.contact-formm button {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
 }
-.contact-form button {
+.contact-formm button {
     background-color: #ffab40;
     color: black;
     border: none;
     cursor: pointer;
 }
-.contact-form button:hover {
+.contact-formm button:hover {
     background-color: #ffab40;
 }
 

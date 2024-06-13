@@ -1,11 +1,13 @@
+
 import React from 'react';
+import { FaCar } from 'react-icons/fa';
 import './TrustedMechanics.css';
 
 const TrustedMechanics = () => {
   return (
     <div className="trusted-mechanics">
-      <div className="garage-image">
-        <img src="https://wallpapercave.com/wp/wp6358395.jpg" alt="Garage" />
+      <div className="icon-container">
+        <FaCar className="car-icon" />
       </div>
       <div className="mechanics-info">
         <h2>Reliable Automotive Experts</h2>

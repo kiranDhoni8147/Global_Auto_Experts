@@ -1,60 +1,69 @@
-
+/* ServiceTracker.css */
 .service-tracker {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the entire container */
+}
+
+.service-info {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.service-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-info li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.service-info span {
+  margin-right: 10px;
+}
+
+.servicee-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-icon {
+  font-size: 150px; /* Adjust size as needed */
+  color: orange; /* Orange color */
+}
+
+@media (min-width: 768px) {
+  .service-tracker {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
   }
-  
-  
+
   .service-info {
-    max-width: 600px;
+    max-width: 50%;
+    margin-left: 0; /* Aligns text content to the left */
+    padding-right: 7%;
   }
-  
-  .service-info h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+
+  .servicee-image {
+    max-width: 40%;
+    margin-right: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .service-info ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .service-info li {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .service-info span {
-    margin-right: 10px;
-  }
-  
-  .servicee-image img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 6%
-  }
-  
-  @media (min-width: 768px) {
-    .service-tracker {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-    }
-  
-    .service-info {
-      max-width: 50%;
-      padding-right: 7%;
-      margin-left: auto; 
-    }
-  
-    .servicee-image {
-      max-width: 40%;
-      margin-right: 6%;
-    }
-  }
+}

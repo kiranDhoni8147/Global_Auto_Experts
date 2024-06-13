@@ -64,18 +64,18 @@ const Partnersnav = () => {
 
   return (
     <div>
-      <nav className="navbarr">
-        <div className="containerr">
-          <div className="navbarr__brand">
+      <nav className="navbarrr">
+        <div className="containerrr">
+          <div className="navbarrr__brand">
             <a href="/" target="_self">
               <img
                 src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png"
                 alt="Logo"
-                className="navbarr__logo"
+                className="navbarrr__logo"
               />
             </a>
           </div>
-          <div className="navbarr__links">
+          <div className="navbarrr__links">
             <ul>
               <li>
                 <a href="/blogs" target="_blank">
@@ -93,13 +93,13 @@ const Partnersnav = () => {
       </nav>
 
       {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={toggleModal}>
+        <div className="modall">
+          <div className="modall-content">
+            <span className="closee" onClick={toggleModal}>
               &times;
             </span>
             <h2>Got a Question? Shoot it!</h2>
-            <form className="contact-form">
+            <form className="contact-formm">
               <div>
                 <input type="radio" id="car" name="vehicle" value="Car" />
                 <label htmlFor="car">Car</label>

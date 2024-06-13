@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Carservicee.css";
 import ServiceBlock from "./ServiceBlock";
@@ -15,7 +16,7 @@ const Carservicee = () => {
               />
             </a>
           </div>
-          <div className="navbar__links">
+          <div className="navbar__linkss">
             <ul>
               <div className="location">
                 <h3>Bangalore</h3>

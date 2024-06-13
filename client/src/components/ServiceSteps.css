@@ -43,7 +43,7 @@ body {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: 2px solid #ffd700;
+  background-color: #f0ad4e !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,22 +51,25 @@ body {
   flex-direction: column;
   padding: 10px;
   box-sizing: border-box;
-  border-style: dotted;
-  transition: transform 0.5s ease,
-  box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  border: 2px solid white;
 }
+
 .circle:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
 .icon {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .circle p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
+  color: white;
 }
 
 form {
@@ -93,7 +96,7 @@ input[type="text"] {
 
 button {
   padding: 10px;
-  background-color: #ffab40;
+  background-color: #f0ad4e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -101,5 +104,5 @@ button {
 }
 
 button:hover {
-  background-color: #ffab40;
+  background-color: #ec971f;
 }
