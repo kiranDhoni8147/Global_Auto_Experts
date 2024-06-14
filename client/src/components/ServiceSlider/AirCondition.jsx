@@ -493,6 +493,7 @@ const AirCondition = () => {
             <p>Air Condition System</p>
           </div>
         </div>
+         
         <form style={{display: isLoading ? 'none' : 'block'}} className="customer-form" onSubmit={handleSubmit}>
           <h2>Book a Service</h2>
           <div className="form-group">
@@ -503,7 +504,7 @@ const AirCondition = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              placeholder="ENTER YOUR NAME"
+              placeholder="Enter Your Name"
             />
           </div>
           <div className="form-group">
@@ -514,7 +515,7 @@ const AirCondition = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              placeholder="ENTER YOUR EMAIL ADDRESS"
+              placeholder="Enter Your Email Address"
             />
           </div>
           <div className="form-group">
@@ -525,7 +526,7 @@ const AirCondition = () => {
               value={formData.phone}
               onChange={handleChange}
               required
-              placeholder="ENTER YOUR MOBILE NUMBER"
+              placeholder="Enter Your Mobile Number"
             />
           </div>
           <div className="form-group">
@@ -535,18 +536,19 @@ const AirCondition = () => {
               value={formData.address}
               onChange={handleChange}
               required
-              placeholder="ENTER YOUR ADDRESS"
+              placeholder="Enter Your Address"
             />
           </div>
           <div className="form-group">
             <select
               id="brand"
+              className="brand-select"
               name="brand"
               value={formData.brand}
               onChange={(e) => handleBrandChange(e.target.value)}
               required
             >
-              <option value="">SELECT YOUR BRAND</option>
+              <option value="">Select Your Brand</option>
               {Object.keys(carData).map((brand) => (
                 <option key={brand} value={brand}>
                   {brand}
@@ -563,7 +565,7 @@ const AirCondition = () => {
                 onChange={(e) => handleModelChange(e.target.value)}
                 required
               >
-                <option value="">SELECT YOUR MODEL</option>
+                <option value="">Select Your Model</option>
                 {carData[formData.brand].map((model) => (
                   <option key={model} value={model}>
                     {model}
