@@ -2,9 +2,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  //use deployment url for production
-  baseURL:'https://global-expert-backend.onrender.com',
-  // baseURL: 'http://localhost:5000/api',
+  baseURL:'https://global-expert-backend.onrender.com/api',   //url for production
+  // baseURL: 'http://localhost:5000/api',    //url for localhost
   headers: {
     'Content-Type': 'application/json',
   },
