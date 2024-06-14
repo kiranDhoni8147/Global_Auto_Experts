@@ -18,11 +18,12 @@ import Services from './Services';
 import PriceComparisonChart from './PriceComparisonChart';
 import RoadsideAssistanceComponent from './RoadsideAssistanceComponent';
 import LaunchingSoonComponent from './LaunchingSoonComponent';
+import TopNav from './TopNav';
 const Home = () => {
   return (
     <div>
-        <Nav /> <br/>
-        <Carservice /> <br/>
+        <Nav /> <br/> <br/>
+        {/* <TopNav/>  <br/> */}
         <ImageSlider /> <br/>
         <Services/> <br/>
         <ServiceSlider/> <br/>

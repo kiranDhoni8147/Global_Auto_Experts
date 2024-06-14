@@ -5,21 +5,6 @@ import './Nav.css';
 const Nav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    inquiryType: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -43,6 +28,21 @@ const Nav = () => {
           <span></span>
         </div>
         <ul className={`navbar__menu ${isMenuOpen ? 'show' : ''}`}>
+          <li>
+            <a href="/carservicee" target="_blank" className="navbar__link">
+              CAR SERVICE
+            </a>
+          </li>
+          <li>
+            <a href="/carspaa" target="_blank" className="navbar__link">
+              CAR SPA
+            </a>
+          </li>
+          <li>
+            <a href="/roadsideassistance" target="_blank" className="navbar__link">
+              ROAD-SIDE ASSISTANCE
+            </a>
+          </li>
           <li className="navbar__phone">
             <FaPhone />
             <span className="phone-number">+91 95915 28892</span>
@@ -63,62 +63,43 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        {isModalOpen && (
-          <div className="modal">
-            <div className="modal-content">
-              <span className="close" onClick={toggleModal}>
-                &times;
-              </span>
-              <h2>Got a Question? Shoot it!</h2>
-              <form className="contact-form">
-                <input
-                  type="text"
-                  id="contactPerson"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Enter your Name"
-                  required
-                />
-                <input
-                  type="text"
-                  id="mobileNumber"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Enter your Mobile Number"
-                  required
-                />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Enter your Email Address"
-                  required
-                />
-                <select name="inquiryType" value={formData.inquiryType} onChange={handleChange}>
-                  <option value="">Select Inquiry Type</option>
-                  <option value="General Enquiry">General Enquiry</option>
-                  <option value="Booking status">Booking status</option>
-                  <option value="Service status">Service status</option>
+      </div>
+
+      {isModalOpen && (
+        <div className="modal" onClick={toggleModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={toggleModal}>&times;</span>
+            <div className="contact-form">
+              <div>
+                <label>Name:</label>
+                <input type="text" name="name" />
+              </div>
+              <div>
+                <label>Phone:</label>
+                <input type="text" name="phone" />
+              </div>
+              <div>
+                <label>Email:</label>
+                <input type="email" name="email" />
+              </div>
+              <div>
+                <label>Type of Inquiry:</label>
+                <select name="inquiryType">
+                  <option value="">Select...</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Service Inquiry">Service Inquiry</option>
                   <option value="Feedback">Feedback</option>
-                  <option value="Others">Others</option>
                 </select>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Enter your Message"
-                  required
-                />
-                <button type="submit">Send Message</button>
-              </form>
+              </div>
+              <div>
+                <label>Message:</label>
+                <textarea name="message"></textarea>
+              </div>
+              <button type="submit">Submit</button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </nav>
   );
 };

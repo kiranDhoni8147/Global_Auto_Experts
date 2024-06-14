@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCheck, FaWrench } from 'react-icons/fa';
 import './RoadsideAssistanceComponent.css';
 
 const RoadsideAssistanceComponent = () => {
@@ -19,11 +20,11 @@ const RoadsideAssistanceComponent = () => {
         <div className="company-includes">
           <h3>Global Auto Experts includes these:</h3>
           <ul>
-            <li>✔️ 24/7 Towing Service</li>
-            <li>✔️ Battery Jumpstart and Replacement</li>
-            <li>✔️ Tire Change Assistance</li>
-            <li>✔️ Fuel Delivery</li>
-            <li>✔️ Lockout Service</li>
+            <li><FaCheck className="tick-icon" /> 24/7 Towing Service</li>
+            <li><FaCheck className="tick-icon" /> Battery Jumpstart and Replacement</li>
+            <li><FaCheck className="tick-icon" /> Tire Change Assistance</li>
+            <li><FaCheck className="tick-icon" /> Fuel Delivery</li>
+            <li><FaCheck className="tick-icon" /> Lockout Service</li>
           </ul>
         </div>
       </div>
@@ -32,3 +33,6 @@ const RoadsideAssistanceComponent = () => {
 };
 
 export default RoadsideAssistanceComponent;
+
+          
+

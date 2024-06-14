@@ -59,7 +59,7 @@ const ServiceSliderrr = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h2 className="service">Car Spa Service</h2>
+        <h2 className="service">Our Most Popular Car Spa Service</h2>
       </a>
       <div className="sliderrr__wrapper" style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
         {services.map((service, index) => (
