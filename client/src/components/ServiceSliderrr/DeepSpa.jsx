@@ -276,7 +276,7 @@ const DeepSpa = () => {
                 onChange={(e) => handleModelChange(e.target.value)}
                 required
               >
-                <option value="">SELECT YOUR MODEL</option>
+                <option value="">Select Your Model</option>
                 {carData[formData.brand].map((model) => (
                   <option key={model} value={model}>
                     {model}
