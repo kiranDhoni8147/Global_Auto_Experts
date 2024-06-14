@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCheck, FaWrench } from 'react-icons/fa';
+import { FaCheck } from 'react-icons/fa';
 import './RoadsideAssistanceComponent.css';
 
 const RoadsideAssistanceComponent = () => {
