@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import { post } from "../service/service";
+import Spinner from "../spinner/spinner";
+import Toaster from "../spinner/toaster";
+import { toast } from "react-toastify";
 import { FaPhone } from 'react-icons/fa';
 import './Nav.css';
 
 const Nav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showToaster, setShowToaster] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -12,6 +18,23 @@ const Nav = () => {
     inquiryType: "",
     message: "",
   });
+
+  const handleSubmit = async (e) => {
+    setIsLoading(true);
+    e.preventDefault();
+
+    // Data should be sent to backend
+    try {
+      const result = await post("/contactnow", formData);
+      setIsLoading(false);
+      setShowToaster(true); 
+      toast.info(result.msg)
+    } catch (err) {
+      setShowToaster(true); 
+      setIsLoading(false);
+      toast.error(err.message);
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,7 +76,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a href="#" onClick={toggleModal} className="navbar__link">
+            <a onClick={toggleModal} className="navbar__link">
               CONTACT
             </a>
           </li>
@@ -66,10 +89,10 @@ const Nav = () => {
         {isModalOpen && (
           <div className="modal">
             <div className="modal-content">
-              <span className="close" onClick={toggleModal}>
+              <span className="close" onClick={toggleModal} onSubmit={handleSubmit}>
                 &times;
               </span>
-              <h2>Got a Question? Shoot it!</h2>
+              <h2>Got a Question? dfg Shoot it!</h2>
               <form className="contact-form">
                 <input
                   type="text"
@@ -115,6 +138,8 @@ const Nav = () => {
                 />
                 <button type="submit">Send Message</button>
               </form>
+              <Spinner loading={isLoading} />
+              {showToaster && <Toaster />}
             </div>
           </div>
         )}
