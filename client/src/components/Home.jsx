@@ -22,8 +22,7 @@ import TopNav from './TopNav';
 const Home = () => {
   return (
     <div>
-        <Nav /> <br/> <br/>
-        {/* <TopNav/>  <br/> */}
+        <Nav /> <br/> <br/> <br/> <br/> <br/>
         <ImageSlider /> <br/>
         <Services/> <br/>
         <ServiceSlider/> <br/>
