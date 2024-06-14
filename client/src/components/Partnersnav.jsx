@@ -14,7 +14,7 @@ const Partnersnav = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [showToaster, setShowToaster] = useState(false);
   const [formData, setFormData] = useState({
-    workshoptype: "",
+    workshoptype: "Car Workshop",
     contactpersonname: "",
     phone: "",
     locality: "",
@@ -50,7 +50,7 @@ const Partnersnav = () => {
     console.log(formData);
     // Data should be sent to backend
     try {
-      const result = await post("http://localhost:5000/api/partners", formData);
+      const result = await post("/partners", formData);
       setIsLoading(false);
       setShowToaster(true);
       toast.info(result.msg);
