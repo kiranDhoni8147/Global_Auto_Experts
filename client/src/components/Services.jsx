@@ -5,7 +5,7 @@ import './Services.css';
 const Services = () => {
   return (
     <div className="services-container">
-      <h2>Our Most Popular Services</h2>
+      <h2>Our Services</h2>
       <div className="services-grid">
         <ServiceCard 
           image="https://www.freedomwarranty.com/wp-content/uploads/Freedom-Warranty-LLC_-Extended-Service-Contract-A-Necessity-with-the-Rise-in-Auto-Repair-Cost_IMAGE1-1.jpeg" 

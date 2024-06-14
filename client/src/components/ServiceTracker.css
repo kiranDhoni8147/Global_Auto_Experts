@@ -30,10 +30,19 @@
   font-size: 18px;
   margin: 10px 0;
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .service-info span {
   margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-info img {
+  width: 18px; /* Set the same size as the tick icon */
+  height: 18px; /* Ensure height matches the width for a square aspect ratio */
 }
 
 .servicee-image {

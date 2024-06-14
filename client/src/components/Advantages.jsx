@@ -4,7 +4,7 @@ import './Advantages.css';
 
 const Advantages = () => {
   const advantages = [
-    { icon: <FaShieldAlt />, title: 'Insurance claim settlement without the exchange of cash', description: '' },
+    { icon: <FaShieldAlt />, title: 'Insurance claim settlement', description: '' },
     { icon: <FaCheckCircle />, title: '100% GUARANTEED', description: '' },
     { icon: <FaTools />, title: 'Expert Technicians', description: '' },
     { icon: <FaCarSide />, title: 'FREE', description: 'Pickup & Drop' },
