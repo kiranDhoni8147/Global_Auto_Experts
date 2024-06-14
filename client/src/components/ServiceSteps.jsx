@@ -34,7 +34,7 @@ const ServiceSteps = () => {
       e.preventDefault();
 
       try {
-        const result = await post("/contactnow", {
+        const result = await post("/getAssistence", {
           name: name,
           phone: mobile
         });
