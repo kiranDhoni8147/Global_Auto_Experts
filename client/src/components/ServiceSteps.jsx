@@ -21,13 +21,13 @@ const ServiceSteps = () => {
   
   const handleRequestCallBack = async (e) => {
     if (!isVerified) {
-      alert("Please verify you are not a robot");
+      // alert("Please verify you are not a robot");
       return;
     }
 
     if (mobile) {
       console.log(`Requesting callback for mobile number: ${mobile}`);
-      alert(`Callback requested for ${mobile}`);
+    /*   alert(`Callback requested for ${mobile}`); */
 
       // Here you can integrate your backend API to trigger the callback.
       setIsLoading(true);
