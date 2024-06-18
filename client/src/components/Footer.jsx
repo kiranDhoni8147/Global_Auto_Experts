@@ -1,13 +1,14 @@
 import React from 'react';
 import './Footer.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import logoo from './LOGO.jpg';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-column">
-          <img src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png" alt="Company Logo" className="footer-logo" />
+          <img src={logoo} alt="Company Logo" className="footer-logo" />
           <p>Global Auto Experts</p>
           <p>+91 95915 28892</p>
           <p>info@globalautoexperts.com</p>

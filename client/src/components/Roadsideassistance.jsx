@@ -2,6 +2,7 @@
 import React from "react";
 import "./Carservicee.css";
 import ServiceeBlock from "./Serviceeblock";
+import logo from './LOGO.jpg'
 const Roadsideassistance = () => {
   return (
     <div>
@@ -10,9 +11,9 @@ const Roadsideassistance = () => {
           <div className="navbar__brand">
             <a href="/" target="_self">
               <img
-                src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png"
+                src={logo}
                 alt="Logo"
-                className="navbar__logo"
+                className="main_navbar__logo"
               />
             </a>
           </div>

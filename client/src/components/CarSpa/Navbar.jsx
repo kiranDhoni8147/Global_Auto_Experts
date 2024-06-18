@@ -1,13 +1,13 @@
 import React from 'react';
 import './Navbar.css';
-
+import logo from '../LOGO.jpg'
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
           <a href="/" target="_self">
-            <img src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png" alt="Logo" className="navbar-logo" />
+            <img src={logo} alt="Logo" className="main_navbar_logo" />
           </a>
         </div>
         <div className="navbar-links">

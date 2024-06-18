@@ -4,6 +4,7 @@ import { post } from "../../service/service";
 import Spinner from "../../spinner/spinner";
 import Toaster from "../../spinner/toaster";
 import { toast } from "react-toastify";
+import logo from '../LOGO.jpg'
 /*Slideshow*/
 const images = [
   "https://carcooper.com/wp-content/uploads/2018/03/carcooper-image-2.jpg",
@@ -448,9 +449,9 @@ const AirCondition = () => {
           <div className="navbar__brand">
             <a href="/" target="_self">
               <img
-                src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png"
+                src={logo}
                 alt="Logo"
-                className="navbar__logo"
+                className="main_navbar__logo"
               />
             </a>
           </div>

@@ -8,6 +8,7 @@ import Spinner from "../spinner/spinner";
 // import Toaster from "../../spinner/toaster";
 import Toaster from "../spinner/toaster";
 import { toast } from "react-toastify";
+import logo from '../components/LOGO.jpg';
 
 const Partnersnav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -69,9 +70,9 @@ const Partnersnav = () => {
           <div className="navbarrr__brand">
             <a href="/" target="_self">
               <img
-                src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png"
+                src={logo}
                 alt="Logo"
-                className="navbarrr__logo"
+                className="main_navbar__logo"
               />
             </a>
           </div>

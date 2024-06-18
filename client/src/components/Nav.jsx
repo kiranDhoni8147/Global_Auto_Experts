@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import { FaPhone } from 'react-icons/fa';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Nav.css';
+import logo from './LOGO.jpg'
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Nav = () => {
       <div className="container">
         <div className="navbar__brand">
           <a href="/" target="_self">
-            <img src="" alt="Logo" className="navbar__logo" />
+            <img src={logo} alt="Logo" className="main_navbar__logo" />
           </a>
         </div>
         <ul className={`navbar__menu ${menuOpen ? 'show' : ''}`}>
