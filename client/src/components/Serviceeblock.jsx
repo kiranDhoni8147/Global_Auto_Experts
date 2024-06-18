@@ -3,6 +3,7 @@ import './ServiceBlock.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import './Footer.css';
 import BrandDivision from './BrandDivision';
+import logo from './LOGO.jpg';
 
 const services = [
   {
@@ -65,7 +66,7 @@ const ServiceeBlock = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-column">
-            <img src="http://globalautoexperts.com/wp-content/uploads/2021/08/logo.png" alt="Company Logo" className="footer-logo" />
+            <img src={logo} alt="Company Logo" className="footer-logo" />
             <p>Global Auto Experts</p>
             <p>+91 95915 28892</p>
             <p>info@globalautoexperts.com</p>

@@ -9,13 +9,13 @@
     transition: transform 0.5s ease; 
 }
 .navbarr {
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     padding: 0px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .navbar__logo {
-    height: 10%;
-    width: 10%;
+  .main_navbar__logo {
+    height: 80px;
+    width: 180px;
   }
   .navbarr .containerr {
     display: flex;
