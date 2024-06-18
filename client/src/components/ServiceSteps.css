@@ -43,7 +43,7 @@ body {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background-color: #f0ad4e !important;
+  background-color: #FFA500 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +96,7 @@ input[type="text"] {
 
 button {
   padding: 10px;
-  background-color: #f0ad4e;
+  background-color: #FFA500;
   color: white;
   border: none;
   border-radius: 5px;

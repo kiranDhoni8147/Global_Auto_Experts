@@ -6,7 +6,7 @@ const TopNav = () => {
   return (
     <div className="top-nav">
       <div className="contact-info">
-        <span>☎ Phone: +91 95915 28892</span>
+        {/* <span>☎ Phone: +91 95915 28892</span> */}
         <span>✉ Mail: info@globalautoexperts.com</span>
         <span>⚲ Find us: Bangalore</span>
       </div>
