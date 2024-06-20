@@ -10,7 +10,6 @@ const Footer = () => {
         <div className="footer-column">
           <img src={logoo} alt="Company Logo" className="footer-logo" />
           <p>Global Auto Experts</p>
-          <p>+91 95915 28892</p>
           <p>info@globalautoexperts.com</p>
           <p>Bangalore</p>
           <a href="/terms">All rights reserved</a>

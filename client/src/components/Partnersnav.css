@@ -3,6 +3,7 @@
     background-color:#F2F2F2;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
 }
 .navbarrr__logo {
     height: 60px;
@@ -90,13 +91,13 @@
     font-size: 16px;
 }
 .contact-formm button {
-    background-color: #ffab40;
+    background-color: #FFA500;
     color: black;
     border: none;
     cursor: pointer;
 }
 .contact-formm button:hover {
-    background-color: #ffab40;
+    background-color: #FFA500;
 }
 
 /* Main Content */
@@ -104,7 +105,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    padding: 20px;
+    padding: 0;
+    margin-top: 0;
+    position: relative;
 }
 .background-image {
     position: relative;
@@ -161,14 +164,14 @@
     border-radius: 5px;
 }
 .partner-form .submit-button {
-    background-color: #ffab40;
+    background-color: #FFA500;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
 }
 .partner-form .submit-button:hover {
-    background-color: #ffab40;
+    background-color: #FFA500;
 }
 
 /* Radio Button Styles */
@@ -200,12 +203,12 @@
     transition: 0.3s;
 }
 .workshop-type-options input[type="radio"]:checked + .workshop-type-label:before {
-    border-color: #ffab40;
-    background: #ffab40;
-    box-shadow: 0 0 5px #ffab40;
+    border-color: #FFA500;
+    background: #FFA500;
+    box-shadow: 0 0 5px #FFA500;
 }
 .workshop-type-label:hover:before {
-    border-color: #ffab40;
+    border-color: #FFA500;
 }
 
 /* Custom Animations */

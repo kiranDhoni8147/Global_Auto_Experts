@@ -80,7 +80,7 @@
 
 .sliderr__content button {
   padding: 10px 20px;
-  background-color: #ffab40;
+  background-color: #FFA500;
   border: none;
   color: black;
   cursor: pointer;
@@ -89,7 +89,7 @@
 }
 
 .sliderr__content button:hover {
-  background-color: #ffab40;
+  background-color: #FFA500;
   transform: scale(1.1);
 }
 
@@ -103,7 +103,7 @@
 
 .view-all button {
   padding: 10px 20px;
-  background-color: #ffab40;
+  background-color: #FFA500;
   border: none;
   color: white;
   cursor: pointer;
@@ -113,7 +113,7 @@
 }
 
 .view-all button:hover {
-  background-color: #ffab40;
+  background-color: #FFA500;
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -122,7 +122,7 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: #ffab40;
+  color: #FFA500;
 }
 
 .sliderr__button {

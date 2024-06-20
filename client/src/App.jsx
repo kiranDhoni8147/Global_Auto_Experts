@@ -24,6 +24,7 @@ import DeepSpa from './components/ServiceSliderrr/DeepSpa';
 import Partnersnav from './components/Partnersnav';
 import './components/correction.css'
 import SubscribePage from './components/SubscribePage';
+import Terms from './components/Terms';
 const App = () => {
   return (
     <Router>
@@ -54,6 +55,7 @@ const App = () => {
           <Route path='/car-spa' element={<CarSpa/>}/>
           <Route path='/partners' element={<Partnersnav/>}/>
           <Route path="/subscribe" element={<SubscribePage/>} />
+          <Route path="/terms" element={<Terms/>}/>
         </Routes>
       </div>
     </Router>
