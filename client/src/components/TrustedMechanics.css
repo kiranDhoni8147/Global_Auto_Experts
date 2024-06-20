@@ -1,0 +1,81 @@
+.trusted-mechanics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.icon-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-iconn {
+  font-size: 180px; /* Increased font size */
+  color: orange;
+}
+
+.mechanics-info {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mechanics-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mechanics-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mechanics-info li {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.mechanics-info .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .trusted-mechanics {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .icon-container {
+    width: 40%;
+    justify-content: center;
+  }
+
+  .mechanics-info {
+    max-width: none;
+    margin-left: 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mechanics-info ul {
+    padding: 0;
+  }
+
+  .mechanics-info li {
+    justify-content: flex-start;
+  }
+}

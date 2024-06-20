@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;600&display=swap');
+
+.about-us {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #e3f2fd 0%);
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #2d3436;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header p {
+  font-size: 1.2em;
+  color: #636e72;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.section__text,
+.section__content {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  text-align: center;
+}
+
+.section__image {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.section__image:hover img {
+  transform: scale(1.15);
+}
+
+.section__content h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section__content p {
+  font-size: 1.1em;
+  color: #2e3c3d;
+  margin-bottom: 20px;
+}
+.mission__content p {
+  margin-bottom: 20px;
+}
+
+.mission__content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mission__content ul li {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.mission__content ul li::before {
+  content: "✔";
+  color: #27ae60;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+}

@@ -1,0 +1,139 @@
+/* Sliderr container */
+.sliderrr {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sliderrr h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-decoration: none;
+}
+
+.sliderrr__wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.sliderrr__slide {
+  min-width: 25%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sliderrr__slide img {
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
+}
+
+.sliderrr__slide img:hover {
+  transform: scale(1.05); 
+}
+
+.sliderrr__content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sliderrr__content h4 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.sliderrr__content .price {
+  color: #FFA500;
+  font-size: x-large;
+  margin-top: 0.5em 0;
+  font-weight: bold;
+}
+
+.sliderrr__content .book-now-btn {
+  padding: 10px 20px;
+  background-color: #FFA500;
+  border: none;
+  color:white;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.sliderrr__content .book-now-btn:hover {
+  background-color: #FFA500;
+  transform: scale(1.1);
+}
+
+.sliderrr__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.sliderrr__button:hover {
+  transform: translateY(-50%) scale(1.2);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sliderrr__button--left {
+  left: 22px;
+}
+
+.sliderrr__button--right {
+  right: 22px;
+}
+
+.sliderrr__button:disabled {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .sliderrr__slide {
+    flex: 0 0 100%;
+  }
+
+  .sliderrr__slide img {
+    height: auto;
+  }
+}

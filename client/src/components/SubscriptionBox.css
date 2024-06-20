@@ -1,0 +1,114 @@
+.subscription-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscription-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.subscription-content {
+  max-width: 60%;
+}
+
+.subscription-content h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: orange;
+  transition: color 0.3s ease;
+}
+
+.subscription-content h1:hover {
+  color: #FF4500;
+}
+
+.subscription-content h2 {
+  color: orange;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.subscription-content h2:hover {
+  color: #FF4500;
+}
+
+.subscription-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 20px 0;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.subscription-content p:hover {
+  color: #666;
+}
+
+.subscription-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subscription-content button:hover {
+  background-color: #ef730d;
+  transform: scale(1.05);
+}
+
+.icon-box {
+  max-width: 30%;
+  margin-left: 20px;
+}
+
+.icon-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.icon-box img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .subscription-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subscription-content {
+    max-width: 100%;
+  }
+
+  .icon-box {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .subscription-content p {
+    font-size: 0.9rem;
+  }
+}

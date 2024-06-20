@@ -1,0 +1,108 @@
+/* ServiceSteps.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.how-it-works,
+.get-assistance {
+  flex: 1 1 40%;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works h2,
+.get-assistance h2 {
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.step {
+  text-align: center;
+  margin: 10px;
+}
+
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #FFA500 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  border: 2px solid white;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.circle p {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.recaptcha {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.recaptcha input {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ec971f;
+}
